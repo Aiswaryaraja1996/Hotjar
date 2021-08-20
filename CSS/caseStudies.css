@@ -253,6 +253,8 @@ a:hover {
 }
 
 /* Nav bar styles ended */
+
+
 body {
   font-family: "Open Sans", sans-serif, Tahoma;
 }
@@ -290,6 +292,11 @@ body {
   font-weight: 400;
   color: #333b40;
   text-align: center;
+}
+
+#caseDiv > .only-for-large-screen{
+  margin-top: 3%;
+  
 }
 
 .card_on_middle {
@@ -404,8 +411,8 @@ body {
     margin: auto;
   }
 
-  .down-txt {
-    margin-top: 4.5%;
+  .only-for-small-screen > div:nth-child(1) {
+    margin-top: -5%;
   }
 
   .down-txt > div:nth-child(2) > img {
@@ -451,6 +458,12 @@ body {
     height: 450px;
     width: 46%;
     margin-bottom: 40px;
+  }
+
+  #companyDiv > .for-mid-screen-div{
+     
+     margin: unset;
+     margin-left: 2%;
   }
   #company > div > img {
     width: 90%;
@@ -546,21 +559,28 @@ body {
     height: 395px;
     margin-top: 10px;
   }
+  
 
   #companyDiv {
-    width: 76%;
+    width: 80%;
     margin: auto;
   }
-  #company {
+  #company{
     margin: 0.5% 1% 3.3%;
     height: 400px;
-    width: 30.9%;
+    width: 31.2%;
   }
   #company > div:nth-child(1) {
     height: 42%;
   }
   #company > div:nth-child(1) > img {
     height: 71%;
+  }
+
+  #companyDiv > .for-large-screen-div{
+    margin: unset;
+    margin-left: 1%;
+    
   }
 
   /* middle card */
@@ -596,9 +616,10 @@ body {
     margin-top: -10%;
   }
   .down-txt > div > p {
-    width: 110%;
+    width: 115%;
     margin-left: 0%;
     margin-top: -14%;
+    
   }
   .down-txt > div > h4 {
     width: 60%;
