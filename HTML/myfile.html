@@ -1,29 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="../CSS/hotJar.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/hotJar.css"/>
+    <title>Document</title>
+    <style>
+        
+        .container {
+            display: flex;
+        }
+        img {
+            width: 500px;
+        }
+        h1 {
+            font-size: 52px;
+            line-height: 55px;
+        }
+        .spacearound-text{
+            margin-left: 70px;
+            margin-right: 60px;
+            margin-top: 160px;
+        }
+        .spacearound-text > h1, p{
+                margin: 20px;
+        }
+        #font > p, #bottom > p{
+            font-size: 21px;
+            line-height: 32px;
+        }
+        .margin-img1 {
+            margin-top: 200px;
+            margin-left: 80px;
+            margin-right: 80px;
+        }
+        body > div > div:nth-child(1){
+            background-color: rgb(244,244,244);
+            height: 700px;
+        }
+        h2 {
+            font-size: 55px;
+            margin-bottom: 0;
+        }
+        h2 + p {
+            font-size: 21.5px;
+            line-height: 32px;
+            margin-top: 15px;
+        }
+        .margin-img2 {
+            margin-top: 100px;
+            margin-left: 80px;
+            margin-right: 80px;
+            margin-bottom: 100px;
+        }
+        .button{
+            background-color: white;
+            border: none;
+            font-size: 20px;
+        }
+        .button_text:hover {
+            text-decoration: underline;
+        }
+        #bottom {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        #bottom > img {
+            width: 1050px;
+        }
+        #downarrow_button{
+            font-size: 60px;
+            border: none;
+            background-color: rgb(244,244,244);
+            margin-left: 48%;
+            margin-top: 40px;
+        }
+        p > a {
+            color:black;
 
-    <title>Hotjar: Website Heatmaps &amp; Behavior Analytics Tools</title>
-    <link rel="icon" href="https://cdn.iconscout.com/icon/free/png-512/hotjar-3521492-2944936.png"
-        type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+        }
+    </style>
 </head>
-
 <body>
-
-    <!-- Navigation bar changes started -->
     <header class="header">
         <div>
             <div class="inner-header">
@@ -212,376 +271,83 @@
         </div>
     </header>
 
-<!-- Navigation bar changes ended -->
 
-
-    <div class="top-bar">
-        <ul>
-            <li>
-                <img class="check-mark" src="../Resources/check.png">
-                35,167 companies signed up last month
-            </li>
-            <li>
-                <img class="check-mark" src="../Resources/check.png">
-                No credit card required
-            </li>
-            <li>
-                <img class="check-mark" src="../Resources/check.png">
-                GDPR- & CCPA-ready
-            </li>
-        </ul>
-    </div>
-
-    <div class="content-container">
-
-        <div class="header-text">
-            <h1 class="H1text">
-                Understand how users
-                <span class="highlight-word">behave on your site,</span>
-                what they need, and how they feel,
-                fast.
-            </h1>
-            <div class="Ptext">
-                <div>
-                    <p>
-                        The slow, manual days of
-                        collating data and feedback
-                        are over.
-                    </p>
-                    <p>
-                        Hotjar is an intuitive,
-                        visual way to discover,
-                        consolidate, and communicate
-                        user needs.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="sign-btn">
-            <div>
-                <a href="" title="Sign up with Google" class="google-signup">
-
-                    <img class="google-logo" src="../Resources/google.png">
-
-                    <span class="google-text">Sign up with Google</span>
-                </a>
-                <a href="" title="Sign up with Email" class="sign-email">Sign up with Email</a>
-            </div>
-        </div>
-        <div class="credit-card">
-            <div>
-                <span>No credit card required</span>
-            </div>
-        </div>
-
-
-
-        <div class="mid-Content">
-            <div class="prod-img-switch">
-                <div class="img-slide">
-
-
-                    <img class="slideImage" src="https://static-cms.hotjar.com/original_images/prod-tour-heatmap.png"
-                        alt="product tour feature heatmap">
-
-                </div>
-                <div class="img-slide">
-
-
-                    <img class="slideImage" src="https://static-cms.hotjar.com/original_images/prod-tour-recordings.png"
-                        alt="product tour feature recordings">
-
-                </div>
-                <div class="img-slide">
-
-
-                    <img class="slideImage"
-                        src="https://static-cms.hotjar.com/original_images/prod-tour-inc-feedback.png"
-                        alt="product tour feature incoming feedback">
-
-                </div>
-                <div class="img-slide">
-
-
-                    <img class="slideImage" src="https://static-cms.hotjar.com/original_images/prod-tour-polls.png"
-                        alt="product tour feature polls">
-
-                </div>
-            </div>
-
-
-            <div class="menu-switch">
-                <h2 class="tour-title">Here's how it works</h2>
-                <h3 class="section-label">BEHAVIOUR</h3>
-                <div class="menu-item">
-                    <div class="menu-icon">
-                        <img src="../Resources/fire.png">
-                    </div>
-                    <div class="menu-title">
-                        Heatmaps
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <div class="menu-icon">
-                        <img src="../Resources/video-camera.png">
-                    </div>
-                    <div class="menu-title">
-                        Recordings
-                    </div>
-                </div>
-                <h3 class="section-label">FEEDBACK</h3>
-                <div class="menu-item">
-                    <div class="menu-icon">
-                        <img src="../Resources/chat.png">
-                    </div>
-                    <div class="menu-title">
-                        Incoming Feedback
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <div class="menu-icon">
-                        <img src="../Resources/bar-graph.png">
-                    </div>
-                    <div class="menu-title">
-                        Surveys
-                    </div>
-                </div>
-                <div class="learn-more">
-                    <a class="list-item" href="">
-                        <span>Full product tour </span>
-                        <img class="arrow" src="../Resources/right-arrow.png">
-                        <p>Read what Hotjar offers</p>
-                    </a>
-
-                    <a class="list-item" href="">
-                        <span>See it in action </span>
-                        <img class="arrow" src="../Resources/right-arrow.png">
-                        <p>Try our interactive demo</p>
-                    </a>
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <div class="brand-wrap">
-            <div class="logo-text">
-                Trusted by over 900,000 organizations across 180+ countries.
-            </div>
-            <div class="logos-image">
-
-
-                <img src="https://static-cms.hotjar.com/documents/social-proof-company-logos-desktop.svg"
-                    alt="companies logos">
-
-            </div>
-        </div>
-
-
-        <div class="gdr-banner">
-            <div class="banner-content">
-
-                <span class="content-icon">
-                    <img src="https://static-cms.hotjar.com/documents/brand-CCPA.svg" alt="ccpa icon" loading="lazy">
-                    <span class="content-button">
-                        <span>Learn More <span><img
-                                    src="https://static-cms.hotjar.com/documents/more-arrow-brand_CGkAFQR.svg"></span></span>
-                    </span>
-                </span>
-            </div>
-
-            <div class="banner-content">
-                <span class="content-icon  gdr-icon">
-                    <img src="https://static-cms.hotjar.com/documents/brand-GDPR-stars.svg" alt="gdpr icon"
-                        loading="lazy">
-                    <span class="content-button">
-                        <span>Learn More <span><img
-                                    src="https://static-cms.hotjar.com/documents/more-arrow-brand_CGkAFQR.svg"></span></span>
-                    </span>
-                </span>
-            </div>
-
-            <div class="content-text">
-                <h4>GDPR and CCPA</h4>
-                <span>Keeping end-user privacy at the center of what we do.</span>
-            </div>
-
-        </div>
-
-
-
-        <div class="case-study">
-
-            <div>
-                <h2 class="sectionH2">Most Product Managers, Designers and Analysts pick Hotjar</h2>
-                <div class="case-study-button">
-                    <a href="">
-                        <span>Read case studies </span><img
-                            src=" https://static-cms.hotjar.com/documents/more-arrow-brand_CGkAFQR.svg"> </a>
-                </div>
-            </div>
-            <div class="case-study-boxes">
-                <div class="case-study-box">
-
-
-                    <img src="https://static-cms.hotjar.com/original_images/brand-personas-ux-designers.jpg"
-                        alt="uxdesigners picture">
-
-                    <div>
-                        <h2>Product Managers</h2>
-                        <p> Eliminate guesswork by watching Session Recordings and see how people are
-                            really using your product.</p>
-                    </div>
-                </div>
-                <div class="case-study-box">
-
-
-                    <img src="https://static-cms.hotjar.com/original_images/brand-personas-product-managers.jpg"
-                        alt="product managers  picture">
-
-                    <div>
-                        <h2>Product Designers</h2>
-                        <p>Empathize with your users and see where they get stuck. Look at user behavior
-                            and ask the right questions at the right time.</p>
-                    </div>
-                </div>
-                <div class="case-study-box">
-
-
-                    <img src="https://static-cms.hotjar.com/original_images/brand-personas-marketers.jpg"
-                        alt="marketers picture">
-
-                    <div>
-                        <h2>Analysts</h2>
-                        <p>Connect the dots between your qualitative and quantitative data to determine
-                            the most-needed, high-impact changes, fast.</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-         <div class="video-slider">
-
-      
-   <div class="testimonialSliderWrapper">
-            <div class="testimonialSlider">
-                 <div class="testimonialSlide">
-                    <div class="slideInner" style="background-image: url(https://static-cms.hotjar.com/original_images/testimonials-thumb-invision.jpg)">
-                            <div class="quote">
-                                 "Hotjar is a critical tool for us to understand our users and identify any points where
-                                they might be getting stuck.”
-                            </div>
-                            <div class="videoTitle">
-                                 <h6>Mike Fiorillo<br><span>Growth Product Manager</span></h6>
-                                <img src="https://static-cms.hotjar.com/documents/testimonials-invision-fit_EooWC3H.svg"
-                                     alt="testimonials unbounce logo" />
-                            </div> 
-                            <div class="play-button">  </div>     
-                    </div>
-                 </div>
-                <div class="testimonialSlide">
-                    <div class="slideInner" style="background-image: url(https://static-cms.hotjar.com/original_images/testimonials-thumb-reed.jpg)">
-                            <div class="quote">
-                                  "We like to make people happy at Reed.co.uk and Hotjar’s Incoming Feedback shows us how
-                                well we're doing.”
-                            </div>
-                            <div class="videoTitle">
-                                 <h6>Brett Orr<br><span>Lead Product Owner</span></h6>
-                                <img src="https://static-cms.hotjar.com/documents/testimonials-reed-fit_14z7ahZ.svg"
-                                     alt="testimonials unbounce logo" />
-                            </div>  
-                            <div class="play-button">  </div>    
-                    </div>
-                 </div>
-                 <div class="testimonialSlide">
-                    <div class="slideInner" style="background-image: url(https://static-cms.hotjar.com/original_images/testimonials-thumb-hubspot.jpg)">
-                            <div class="quote">
-                               "If you can’t figure out why your users are bouncing, Hotjar Surveys is a really direct
-                                way to ask them.”
-                            </div>
-                            <div class="videoTitle">
-                                <h6>Eric Peters<br><span>Growth Marketer</span></h6>
-                                <img src="https://static-cms.hotjar.com/documents/testimonials-hubspot-fit_RQy9Nsu.svg"
-                                     alt="testimonials unbounce logo" />
-                            </div> 
-                            <div class="play-button">  </div>     
-                    </div>
-                 </div>
-                 <div class="testimonialSlide">
-                    <div class="slideInner" style="background-image: url(https://static-cms.hotjar.com/original_images/testimonials-thumb-unbounce.jpg)">
-                            <div class="quote">
-                                "I used to have a bunch of different tools I had to pay for, with Hotjar you get
-                                everything in one bundle.”
-                            </div>
-                            <div class="videoTitle">
-                                <h6>Michael Aagaard<br><span>Senior conversion optimizer</span></h6>
-                                <img src="https://static-cms.hotjar.com/documents/testimonials-unbounce-fit_YjvKJv9.svg"
-                                     alt="testimonials unbounce logo" />
-                            </div> 
-                            <div class="play-button">  </div>     
-                    </div>
-                 </div>              
-            </div>
-
-
-    </div>
-
-    <ul class="sliders">
-        <li>
-            <button class="slide-line"></button>
-        </li>
-        <li>
-            <button class="slide-line"></button>
-        </li>
-        <li>
-            <button class="slide-line"></button>
-        </li>
-        <li>
-            <button class="slide-line"></button>
-        </li>
-    </ul>
-
- </div>
-        <div class="platform-header">
-            <h2 class="sectionH2">Hotjar works out of the box on most popular platforms</h2>
-        </div>
-
-<div class="platforms-img">
-    <img src ="https://static-cms.hotjar.com/documents/brand-one-script_Twj5bMZ.svg">
-</div>
-        
-<div class="get-started">
-    <img src="https://static-cms.hotjar.com/original_images/brand-get-started.webp">
-</div>
-
-<div class="get-started-wrap">
-    <h2 class="sectionH2">Get started with Hotjar today</h2>
-    <div class="try-btn">
+    <div>
         <div>
-            <a class="btn"
-               href=""
-               title="Try it free">Try it free</a>
+            <div class="container">
+                <div class="spacearound-text" id="font">
+                    <h1>Create experiences
+                    your users will love</h1>
+                    <p>Founded in 2014, we are proud to be a self-funded, 
+                    profitable, and fully distributed company on a mission 
+                    to help you better understand how users behave on your website.</p>
+                    <p>We serve customers in 180+ countries and work with 
+                    the best people around the world: our global team of 
+                    over 100 Hotjarians works remotely throughout Europe, the Americas, and Africa. Hi 👋</p>
+                </div>
+                <div class="margin-img1">
+                    <img src="https://static-cms.hotjar.com/images/hotjar-team-2019.original.png"/>
+                </div>
+            </div>
+            <a href="#append1">
+                <button id="downarrow_button">
+                    <span>
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </span>
+                </button>
+            </a>
+        </div>
+        <div class="container">
+            <div class="spacearound-text" id="append1">
+                <h2>What we do</h2>
+                <p>We help you better understand user behavior so you 
+                can make the right changes, improve UX, and grow 
+                conversions.</p>       
+                <button type="button" class="button" id="btn1" onclick="open_text1()">
+                    <span class="button_icon">
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </span>
+                    <span class="button_text" id="button-t1">Show more</span>
+                </button>
+            </div>
+            <div class="margin-img2">
+                <img src="https://static-cms.hotjar.com/images/what-we-do.original.jpg"/>
+            </div>
+        </div>
+        <div class="container">
+            <div class="spacearound-text" id="append2">
+                <h2>Our values</h2>
+                <p>We want to build a long-lasting, sustainable, and 
+                purposeful business with engaged team members and 
+                delighted customers.</p>
+                <button type="button" class="button" id="btn2" onclick="open_text2()">
+                    <span class="button_icon">
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </span>
+                    <span class="button_text" id="button-t2">Show more</span>
+                </button>
+            </div>
+            <div class="margin-img2">
+                <img src="https://static-cms.hotjar.com/images/hotjar-values.original.jpg"/>
+            </div>
+        </div>
+        <div id="bottom">
+            <h3>Over 900,000 websites worldwide already use and trust Hotjar</h3>
+            <img src="https://static-cms.hotjar.com/documents/company-logos-1_H8r5gVf.svg"/>
+            <p>Want to know more? See our <a href="https://www.hotjar.com/tour/">product tour</a>!</p>
         </div>
     </div>
-    <div class="credit-card">
-        <div>
-            <span>No credit card required</span>
-        </div>
-    </div>
-</div>
-
-    </div>
-
-    </div>
 
 
-<!-- Footer changes started -->
     <footer class="footer">
         <div class="footer-wrap">
             <div class="inner-container">
-                <section class="footer-section">                    
+                <section class="footer-section">
+
+
+
+
+
                     <nav class="footer-nav">
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -735,10 +501,7 @@
             </div>
         </div>
     </footer>
-<!-- Footer changed ended -->
 
-
-<!-- Feedback changes started -->
     <div class="feedback-container">
         <button class="feedback">
             <div class="feedback-text">Feedback</div>
@@ -747,55 +510,63 @@
             </div>
         </button>
     </div>
-<!-- Feedback changes ended -->
 
     <script>
+        var a=0;
+        function open_text1(){
+            a++;
+            if(a==1){
+                var div = document.createElement('div');
 
-        var myIndex = 0;
-        var count2 = 0;
-        imgSlide();
-        videoSlide();
+                var btn = document.getElementById('btn1');
 
-        function imgSlide() {
-            var i;
-            var x = document.getElementsByClassName("img-slide");
-            var y = document.getElementsByClassName("menu-title")
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-                y[i].style.color = "#c5c5c5";
-                y[i].style.fontWeight = "normal";
+                var divElem = document.getElementById("append1");
+                divElem.insertBefore(div, btn);
+
+                var para1 = document.createElement('p');
+                para1.innerHTML ="We began in 2014, when we released a simple beta version of Hotjar, collected feedback from hundreds of testers (we consider them our ‘Founding Members’), and kept improving through iterative changes."
+                div.appendChild(para1);
+                var para2 = document.createElement('p');
+                para2.textContent ="Six years on, Hotjar is the leading solution for businesses selling online and their marketing, analytics, UX, and CRO teams who want a clearer understanding of user behavior. Our team of 100+ Hotjarians is committed to making Hotjar easy—easy to get approval for, set up, use, and get valuable insights from."
+                div.appendChild(para2);
+                var para3 = document.createElement('p');
+                para3.innerHTML ="We are used on over 900,000 websites in 180+ countries, but we haven’t forgotten our beginnings: our origin story is publicly and transparently documented, and you can read it here."
+                div.appendChild(para3);
+                
+                var button_text= document.getElementById('button-t1');
+                button_text.innerHTML="Show Less"
             }
-            myIndex++;
-            if (myIndex > x.length) { myIndex = 1 }
-            x[myIndex - 1].style.display = "block";
-            y[myIndex - 1].style.color = "#f4364c";
-            y[myIndex - 1].style.fontWeight = "700";
-            setTimeout(imgSlide, 2000);
         }
+        var b=0;
+        function open_text2(){
+            b++;
+            if(b==1){
+                var div = document.createElement('div');
+                
+                var btn = document.getElementById('btn2');
 
-        
-        
+                var divElem = document.getElementById("append2");
+                divElem.insertBefore(div, btn);
 
-        function videoSlide() {
-            console.log(2)
-            var i;
-            var m = document.getElementsByClassName("testimonialSlide");
-            var n = document.getElementsByClassName("slide-line")
-            
-            for (i = 0; i < m.length; i++) {
-                m[i].style.display="none";
-                n[i].style.backgroundColor = "#e1e1e1";
+                var para1 = document.createElement('p');
+                para1.textContent ="From day one, Hotjar embraced a remote and flexible working environment. We work a 40-hour week but are empowered to plan our time and productivity as we wish. We have budgets to set up our home office, personal development and wellness allowances, and a ‘work together’ budget to visit other Hotjarians, wherever they may be—among other perks."
+                div.appendChild(para1);
+                var para2 = document.createElement('p');
+                para2.textContent ="We don't see each other in person often, but our work is always guided by respect, transparency, and collaboration. Our success is measured by the value we create for our users and customers, and all 100+ of us aim to follow five core values:"
+                div.appendChild(para2);
+                var para3 = document.createElement('p');
+                para3.innerHTML ="1. Obsess over our users<br/>2. Be bold and move fast<br/>3. Work with respect<br/>4. Build trust with transparency<br/>5. Learn by doing<br/>"
+                div.appendChild(para3);
+                var para4 = document.createElement('p');
+                para4.innerHTML ="The way we work is publicly documented, and you can read our team manual here."
+                div.appendChild(para4);
+
+                var button_text= document.getElementById('button-t2');
+                button_text.innerHTML="Show Less"
             }
-            count2++;
-            if (count2 > m.length) { count2 = 1 }
-            m[count2 - 1].style.display="block";
-            n[count2 - 1].style.backgroundColor = "#fd385b";
-            setTimeout(videoSlide, 5000);
         }
-
-
     </script>
-
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
-
 </html>
