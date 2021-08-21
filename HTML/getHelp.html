@@ -1,268 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<divb>, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        #popular-guides{
-            max-width: 75%;
-            margin: auto;
-            text-align: center;
-            margin-bottom: 15px;
-        }
-        #popular-guides > p{
-            font-size: 35px;
-            color: rgb(247,51,72);
-        }
-        #popular-guides > div{
-            display:grid;
-            grid-template: "x y";
-            margin-top: 25px;
-        }
-        #first{
-            grid-area:"x"
-        }
-        #first > p, #second > p{
-            line-height: 35px;
-            font-size: 18px;
-        }
-        #first > p:hover, #second > p:hover{
-            color: rgb(128,128,128);
-        }
-        #second{
-            grid-area:"y"
-        }
-        #bg-color {
-            background-color: rgb(245,245,245);
-            padding-top: 20px;
-            padding-bottom: 30px;
-        }
-        #topics-cont {
-            max-width: 89%;
-            margin: auto;
-            text-align: center;
-            display:grid;
-            grid-template: "p p p"
-                           "a b c"
-                           "d e f"
-                           "g h i";
-        }
-        #topics-cont a {
-            background-color: white;
-            min-width: 30%;
-            margin: 15px;
-            padding: 30px 13px;
-            color: black;
-            text-decoration: none;
-        }
-        #topics-cont a:hover{
-            box-shadow: 0 1.5px 3px 1.5px rgb(181,181,181);
-        }
-        .box > img {
-            width: 60px;
-        }
-        .box > h3, p {
-            margin: 5px;
-        }
-        .box > p, .lw-box > p{
-            font-size: 18px;
-        }
-        .box > p:hover{
-            color: rgb(128,128,128);
-        }
-        #para{
-            grid-area: p;
-            font-size: 35px;
-            color: rgb(247,51,72);
-        }
-        #box1{
-            grid-area: a;
-        }
-        #box2{
-            grid-area: b;
-        }
-        #box3{
-            grid-area: c;
-        }
-        #box4{
-            grid-area: d;
-        }
-        #box5{
-            grid-area: e;
-        }
-        #box6{
-            grid-area: f;
-        }
-        #box7{
-            grid-area: g;
-        }
-        #box8{
-            grid-area: h;
-        }
-        #box9{
-            grid-area: i;
-        }
-        #box10{
-            grid-area: j;
-        }
-        #box11{
-            grid-area: k;
-        }
-        #largewidth-box{
-            max-width: 88%;
-            display: grid;
-            grid-template: "j k" ;
-            margin: auto;
-            margin-top: 25px;
-        }
-        .lw-box{
-            min-width: 40%;
-            border: 1px solid rgb(204,204,204);
-            margin: 15px;
-            text-align: center;
-            background-color: white;
-            padding-top: 5px;
-            padding-bottom: 30px;
-        }
-        .lw-box:hover{
-            box-shadow: 0 1.5px 3px 1.5px rgb(181,181,181);
-        }
-        a > button {
-            background-color: rgb(247,51,72);
-            border-radius: 50px;
-            border: none;
-            color: white;
-            padding: 10px 30px;
-            margin-top: 30px;
-        }
-        @media only screen and (max-width: 768px) {
-            #popular-guides > div{
-                grid-template: "x"
-                               "y";
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../CSS/getHelp.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-            }
-            #first > p, #second > p{
-                line-height: 20px;
-            }
-            #topics-cont {
-                grid-template: "p"
-                               "a"
-                               "b"
-                               "c"
-                               "d"
-                               "e"
-                               "f"
-                               "g"
-                               "h"
-                               "i";
-            }
-            #largewidth-box{
-                grid-template: "j"
-                               "k";
-            }
-        } 
-    </style>
-</head>
-<body>
-    <div id="popular-guides">
-        <p>Popular Guides</p>
-        <div>
+    <title>Hotjar Documentation</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://theme.zdassets.com/theme_assets/1911667/a5ff9dc7fb5929ccf07b4ea5832b09d8c1db3111.ico"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="nav-wrap">
+      <header class="header-wrap">
+        <div class="logo">
+          <a title="Home" href="#">
+            <img
+              src="https://seeklogo.com/images/H/hotjar-logo-7F1ECF09D5-seeklogo.com.png"
+              alt="Logo"
+            />
+          </a>
+        </div>
+        <div class="nav-wrapper">
+          <span class="menu-icon"></span>
+          <nav class="user-nav" id="user-nav" aria-expanded="false">
+            <a
+              class="navbar_link"
+              href="https://www.hotjar.com/pricing/?utm_source=kb"
+              >Pricing</a
+            >
+            <a
+              class="navbar_lin"
+              href="https://trello.com/b/LJOcdoHx/hotjar-public-product-roadmap"
+              >Roadmap</a
+            >
+            <a class="navbar_lin" href="https://status.hotjar.com/"
+              >System Status</a
+            >
+            <a class="navbar_lin" href="https://www.hotjar.com/"
+              >Back to Hotjar.com</a
+            >
+          </nav>
+          <a
+            href="https://insights.hotjar.com/register?c=da35c33027914dfded1b7de847f5887a&signup_source=hotjar-docs"
+            class="try-it-free"
+            >Try It For Free</a
+          >
+        </div>
+      </header>
+    </div>
+    <div class="main-container">
+      <section class="help">
+        <div class="help-content">
+          <h3 class="search-callout">How can we help?</h3>
+
+          <div class="search-bar">
+            <input
+              type="search"
+              name="query"
+              id="query"
+              placeholder="Search our articles"
+              autocomplete="off"
+              aria-label="Search"
+            />
+            <img class="search" src="../Resources/search.png" />
+          </div>
+        </div>
+      </section>
+      <div class="featuredArticles" id="stickyArticles">
+        <h1>💡 Featured Article:</h1>
+        <a href="">
+          <h2>5 quick tips to get started with Hotjar</h2>
+        </a>
+      </div>
+
+      <div>
+        <div id="popular-guides">
+          <p>Popular Guides</p>
+          <div>
             <div id="first">
-                <p >Hotjar Tracking Code</p>
-                <p>Getting Started with Hotjar</p>
-                <p>Troubleshooting FAQs for Recordings</p>
+              <p>Hotjar Tracking Code</p>
+              <p>Getting Started with Hotjar</p>
+              <p>Troubleshooting FAQs for Recordings</p>
             </div>
             <div id="second">
-                <p>Installation Guides</p>
-                <p>Privacy FAQs</p>
-                <p>Troubleshooting FAQs for Heatmaps</p>
+              <p>Installation Guides</p>
+              <p>Privacy FAQs</p>
+              <p>Troubleshooting FAQs for Heatmaps</p>
             </div>
+          </div>
         </div>
-    </div>
-    <div id="bg-color">
-        <div id=topics-cont>
+        <div id="bg-color">
+          <div id="topics-cont">
             <p id="para">Topics</p>
-            <a href="https://help.hotjar.com/hc/en-us/categories/115001808227"><div class="box" id="box1">
-                <img src="https://p6.zdassets.com/hc/theme_assets/1911667/115000201887/115002608787.png"/>
+            <a href="https://help.hotjar.com/hc/en-us/categories/115001808227"
+              ><div class="box" id="box1">
+                <img
+                  src="https://p6.zdassets.com/hc/theme_assets/1911667/115000201887/115002608787.png"
+                />
                 <h3>Installing Hotjar</h3>
-                <p>Follow our tracking code installation guides to
-                get started using Hotjar on your site</p>
-            </div></a>
-            <a href="https://help.hotjar.com/hc/en-us/categories/360001640813"><div class="box" id="box2">
-                <img src="https://p6.zdassets.com/hc/theme_assets/1911667/115000201887/115002315368.png"/>
+                <p>
+                  Follow our tracking code installation guides to get started
+                  using Hotjar on your site
+                </p>
+              </div></a
+            >
+            <a href="https://help.hotjar.com/hc/en-us/categories/360001640813"
+              ><div class="box" id="box2">
+                <img
+                  src="https://p6.zdassets.com/hc/theme_assets/1911667/115000201887/115002315368.png"
+                />
                 <h3>Plans & Billing</h3>
-                <p>Learn more about Hotjar plans and Billing
-                options including, pricing, what each of our
-                plans include and payment management
+                <p>
+                  Learn more about Hotjar plans and Billing options including,
+                  pricing, what each of our plans include and payment management
                 </p>
-            </div></a>
-            <a href="https://help.hotjar.com/hc/en-us/categories/115001945067"><div class="box" id="box3">
-                <img src="https://p6.zdassets.com/hc/theme_assets/1911667/115000201887/115003199808.png"/>
+              </div></a
+            >
+            <a href="https://help.hotjar.com/hc/en-us/categories/115001945067"
+              ><div class="box" id="box3">
+                <img
+                  src="https://p6.zdassets.com/hc/theme_assets/1911667/115000201887/115003199808.png"
+                />
                 <h3>Account Management</h3>
-                <p>Learn more about your hotjar account 
-                including how to manage your organizations,
-                sites, users and your billing information
+                <p>
+                  Learn more about your hotjar account including how to manage
+                  your organizations, sites, users and your billing information
                 </p>
-            </div></a>
-            <a href="https://help.hotjar.com/hc/en-us/categories/360005988033"><div class="box" id="box4">
-                <img src="https://theme.zdassets.com/theme_assets/1911667/231353112d7c009be31499f70cc97f69143240d7.png"/>
+              </div></a
+            >
+            <a href="https://help.hotjar.com/hc/en-us/categories/360005988033"
+              ><div class="box" id="box4">
+                <img
+                  src="https://theme.zdassets.com/theme_assets/1911667/231353112d7c009be31499f70cc97f69143240d7.png"
+                />
                 <h3>Heatmaps</h3>
-                <p>Understand the different types of Heatmaps,
-                    how to set them up, and how to use advanced
-                    heatmap settings.
+                <p>
+                  Understand the different types of Heatmaps, how to set them
+                  up, and how to use advanced heatmap settings.
                 </p>
-            </div></a>
-            <a href="https://help.hotjar.com/hc/en-us/categories/360004931354"><div class="box" id="box5">
-                <img src="https://theme.zdassets.com/theme_assets/1911667/a6adf5692cbdcd9d6996c27bb0ed7c30de5ed8f6.png"/>
+              </div></a
+            >
+            <a href="https://help.hotjar.com/hc/en-us/categories/360004931354"
+              ><div class="box" id="box5">
+                <img
+                  src="https://theme.zdassets.com/theme_assets/1911667/a6adf5692cbdcd9d6996c27bb0ed7c30de5ed8f6.png"
+                />
                 <h3>Recordings</h3>
-                <p>Learn how to start, sort, and set up advanced
-                    settings for your Recordings.
+                <p>
+                  Learn how to start, sort, and set up advanced settings for
+                  your Recordings.
                 </p>
-            </div></a>
-            <a href="https://help.hotjar.com/hc/en-us/categories/115001323487"><div class="box" id="box6">
-                <img src="https://p6.zdassets.com/hc/theme_assets/1911667/115000201887/115002315328.png"/>
+              </div></a
+            >
+            <a href="https://help.hotjar.com/hc/en-us/categories/115001323487"
+              ><div class="box" id="box6">
+                <img
+                  src="https://p6.zdassets.com/hc/theme_assets/1911667/115000201887/115002315328.png"
+                />
                 <h3>Incoming Feedback and Surveys</h3>
-                <p>Read about our feedback tools: Surveys and 
-                    Incoming Feedback
+                <p>
+                  Read about our feedback tools: Surveys and Incoming Feedback
                 </p>
-            </div></a>
-            <a href="https://help.hotjar.com/hc/en-us/categories/360003405813"><div class="box" id="box7">
-                <img src="https://theme.zdassets.com/theme_assets/1911667/d2a3173aa4dde2abe1f3f3170efaa91e77fd7437.png"/>
+              </div></a
+            >
+            <a href="https://help.hotjar.com/hc/en-us/categories/360003405813"
+              ><div class="box" id="box7">
+                <img
+                  src="https://theme.zdassets.com/theme_assets/1911667/d2a3173aa4dde2abe1f3f3170efaa91e77fd7437.png"
+                />
                 <h3>Compliance, Legal & Security</h3>
-                <p>Understand Hotjar's approach to Compliance,
-                    Legal and Security.
+                <p>
+                  Understand Hotjar's approach to Compliance, Legal and
+                  Security.
                 </p>
-            </div></a>
-            <a href="https://help.hotjar.com/hc/en-us/categories/115001323967"><div class="box" id="box8">
-                <img src="https://p6.zdassets.com/hc/theme_assets/1911667/115000201887/115003204947.png"/>
+              </div></a
+            >
+            <a href="https://help.hotjar.com/hc/en-us/categories/115001323967"
+              ><div class="box" id="box8">
+                <img
+                  src="https://p6.zdassets.com/hc/theme_assets/1911667/115000201887/115003204947.png"
+                />
                 <h3>About Hotjar</h3>
-                <p>Learn about general our features and read 
-                more in-depth technical information about
-                the platform
+                <p>
+                  Learn about general our features and read more in-depth
+                  technical information about the platform
                 </p>
-            </div></a>
-            <a href="https://help.hotjar.com/hc/en-us/categories/360002046454"><div class="box" id="box9">
-                <img src="https://theme.zdassets.com/theme_assets/1911667/74dc68f2ec18a766035d45f721b7a3370e30d87c.png"/>
+              </div></a
+            >
+            <a href="https://help.hotjar.com/hc/en-us/categories/360002046454"
+              ><div class="box" id="box9">
+                <img
+                  src="https://theme.zdassets.com/theme_assets/1911667/74dc68f2ec18a766035d45f721b7a3370e30d87c.png"
+                />
                 <h3>Development</h3>
-                <p>Advanced section for developers to help with
-                    the set up of events and available APIs
+                <p>
+                  Advanced section for developers to help with the set up of
+                  events and available APIs
                 </p>
-            </div></a>
+              </div></a
+            >
+          </div>
         </div>
-    </div>
-    <div id="largewidth-box">
-        <div id="box10" class="lw-box">
+        <div id="largewidth-box">
+          <div id="box10" class="lw-box">
             <h3>Still need help?</h3>
-            <p>Get help with common questions or reach out to our support team.</p>
-            <a href="https://help.hotjar.com/hc/en-us/requests/new"><button>CONTACT US</button></a>
-        </div>
-        <div id="box11" class="lw-box">
+            <p>
+              Get help with common questions or reach out to our support team.
+            </p>
+            <a href=""><button>CONTACT US</button></a>
+          </div>
+          <div id="box11" class="lw-box">
             <h3>Just getting started?</h3>
-            <p>Watch our comprehensive demo to help get the most out of Hotjar.</p>
-            <a href="https://help.hotjar.com/hc/en-us/articles/360000799813"><button>WATCH DEMO</button></a>
+            <p>
+              Watch our comprehensive demo to help get the most out of Hotjar.
+            </p>
+            <a href=""><button>WATCH DEMO</button></a>
+          </div>
         </div>
+      </div>
     </div>
-</body>
+
+    <footer class="footer">
+      <div class="logo">
+        <a title="Home" href="#">
+          <img
+            src="https://theme.zdassets.com/theme_assets/1911667/590ef0f0d048850c7f87d1a4cfb3a8b860062b98.png"
+            alt="Logo"
+          />
+        </a>
+      </div>
+      <div class="column">
+        <h2>HOTJAR</h2>
+        <ul>
+          <li><a href="">Product Tour</a></li>
+          <li><a href="">Pricing</a></li>
+          <li>
+            <a href="">Customer Stories</a>
+          </li>
+          <li><a href="">Product updates</a></li>
+          <li>
+            <a href="">What is Hotjar?</a>
+          </li>
+          <li><a href="">Status</a></li>
+          <li>
+            <a href="">Site performance</a>
+          </li>
+          <li>
+            <a href="">Your privacy & Hotjar</a>
+          </li>
+        </ul>
+      </div>
+      <div class="column">
+        <h2>RESOURCES</h2>
+        <ul>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Guides</a></li>
+          <li><a href="">Documentation</a></li>
+          <li>
+            <a href="">Heatmap handbook</a>
+          </li>
+          <li>
+            <a href="">CRO action plan</a>
+          </li>
+          <li>
+            <a href="">CX resources</a>
+          </li>
+          <li>
+            <a href="">Usability testing hub</a>
+          </li>
+          <li>
+            <a href="">Website feedback 101</a>
+          </li>
+        </ul>
+      </div>
+      <div class="column">
+        <h2>COMPLIANCE</h2>
+        <ul>
+          <li>
+            <a href="">Compliance, legal & security</a>
+          </li>
+          <li>
+            <a href="">Terms of service</a>
+          </li>
+          <li>
+            <a href="">Privacy policy</a>
+          </li>
+          <li>
+            <a href="">Acceptable use policy</a>
+          </li>
+          <li>
+            <a href="">Cookie info</a>
+          </li>
+          <li>
+            <a href="">Do not track</a>
+          </li>
+        </ul>
+      </div>
+      <div class="column">
+        <h2>COMPANY</h2>
+        <ul>
+          <li><a href="">About us</a></li>
+          <li><a href="">Careers</a></li>
+          <li>
+            <a href="">Founding members</a>
+          </li>
+          <li id="footercontactus">
+            <a href="">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="copyright">
+        <p>
+          Copyright &copy; 2014 -
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          Hotjar Ltd. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      document
+        .getElementsByClassName("menu-icon")[0]
+        .addEventListener("click", () => {
+          document
+            .getElementById("user-nav")
+            .setAttribute("aria-expanded", "true");
+        });
+    </script>
+  </body>
 </html>
