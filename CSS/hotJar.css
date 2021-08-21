@@ -5,10 +5,12 @@ body {
   font-size: 18px;
   color: #3c3c3c;
 }
+/* Nav bar styles started */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 a {
   text-decoration: none;
@@ -19,20 +21,20 @@ a {
   right: 0;
   left: 0;
   background-color: #fff;
-  height: 45px;
+  height: 100px;
   z-index: 3;
   display: block;
   height: 100px;
 }
 
 .inner-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100px;
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
+display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .inner-header > a > img {
@@ -41,24 +43,26 @@ a {
 }
 .menu-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   width: 100%;
   height: 40px;
 }
-.menu-header nav {
+/* .menu-header nav {
   width: 100%;
   height: 100%;
-}
+} */
 .nav {
   display: flex;
-  align-items: center;
+ 
   width: 100%;
   height: 100%;
   flex-direction: row;
   justify-content: flex-end;
+   align-items: center;
   margin-top: 0;
   overflow: visible;
+      
 }
 .nav-item {
   position: relative;
@@ -92,10 +96,13 @@ a {
   margin-left: 70px;
   font-size: 14px;
   color: #3c3c3c;
-  font-weight: 600;
+  font-weight: bolder;
   padding: 5px 0;
   text-decoration: none;
+      transition: background 0.2s ease-in-out;
+      font-family: 'Open Sans', sans-serif;
 }
+    
 .nav-link-arrow::before {
   content: "";
   display: inline-block;
@@ -135,7 +142,7 @@ ul {
   justify-content: center;
   cursor: pointer;
   text-decoration: none;
-  margin-left: 25px;
+  margin-left: 0 0 0 47px;
   font-size: 13px;
 }
 .nav-link-alt-one:hover,
@@ -166,7 +173,7 @@ ul {
   color: #666;
   transition: color 0.3s ease-out, border-color 0.3s ease-out;
   cursor: pointer;
-  margin-left: 20px;
+  margin: 0 0 0 20px;
   font-size: 13px;
 }
 .sub-menu {
@@ -256,6 +263,8 @@ a:hover {
   background-color: #f9f9f9;
   color: #fd3a5c;
 }
+
+/* Nav bar styles ended */
 
 .content-container {
   display: flex;
@@ -422,6 +431,7 @@ p {
   text-align: center;
 }
 
+/* Footer section starts */
 .footer {
   padding-top: 50px;
   padding-bottom: 70px;
@@ -447,7 +457,8 @@ p {
   width: 100%;
 }
 .footer-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   justify-content: space-between;
   margin-bottom: 20px;
   padding-top: 50px;
@@ -509,6 +520,8 @@ p {
   width: 23px;
   height: 25px;
 }
+
+/* Footer section ends */
 
 .img-slide {
   display: none;
@@ -936,5 +949,220 @@ button{
     top: 46%;
 
 }
+.small-screen-nav{
+    display: none;
+}
+.small-screen-menu{
+    display: none;
+}
+
+
+
+   @media screen and (max-width:768px){
+    .menu-header{
+        display: none;        
+    }
+
+    .footer-logo{
+        display: none;
+    }
+
+    .footer-bottom{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:20px;
+    }
+
+.footer-list {
+   grid-template-columns: 1fr;
+ }
+
+ .footer-item {
+  border-bottom: 1px solid #9b9b9b;
+  padding-bottom: 30px;
+  margin-bottom: 8px;
+
+ }
+
+ .footer-subnav{
+  height: 0px;
+  overflow: hidden;
+  transition: all ease 1s;
+ }
+
+ .footer-item-list-hide {
+  height: auto;
+ }
+
+  
+    .inner-header{
+            display: flex;
+  
+    align-items: center;
    
+    width:94%;
+    margin: auto;
+    }
+.header-logo{
+    width: 56px;
+    height: 27px;
+    margin-top: 4px;
+}
+.small-screen-nav{
+        display:flex;
+        justify-content: flex-end;
+        width: 100%;
+    font-weight: 700;
+
+    }
+.toggle-menu{
+    display:block;
+    background: transparent;
+    border: 1px solid #ddd;
+    padding: 9px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.menu-line:not(:first-child){
+    margin-top: 4px;
+}
+.menu-line{
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background: #888;
+   
+}
+
+.small-screen-menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    width: 400px;
+    max-width: 80%;
+    height: 100%;
+    background: #53595d;
+}
+.first-menu{
+  display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 56px;
+    height: 56px;
+    padding: 14px 20px;
+    border-top: 1px solid #9a9a9a;
+    border-bottom: 1px solid #333;
+    transition: background 0.2s ease-in-out;
+    cursor: pointer;
+    background: #53595d;
+}
+
+.closeIcon{
+    height: 20px;
+    width: 19px;
+}
+
+.nav-small{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.nav-item-small{
+    width: 100%;
+    position: relative;
+}
+.nav-link:hover, .nav-link:active, .nav-link:focus {
+    background: #47494a;
+    color: #fff;
+}
+.nav-link{
+    font-size: 15px;
+    margin:0px;
+    cursor: pointer;
+    position: relative;
+    color: #fff;
+    font-weight: 400;
+    padding: 20px;
+    transition: background 0.2s ease-in-out;
+    text-decoration: none;
+    display: flex;    
+    border-top: 1px solid #9a9a9a;
+    border-bottom: 1px solid #333;
+}
+.nav-item-dropdown-small .nav-link[aria-expanded='true']+.nav-sub-menu {
+    display: block;
+}
+.nav-sub-menu{
+    display: none;
+}
+
+
+.submenu-link{
+    font-size: 15px;
+    font-size: .83333rem;
+    cursor: pointer;
+    position: relative;
+    color: #fff;
+    font-weight: 400;
+    padding: 20px;
+    transition: background 0.2s ease-in-out;
+    text-decoration: none;
+    display: flex;
+    border-top: 1px solid #212529;
+    border-bottom: 1px solid #3c3c3c;
+    background-color: #3c3c3c;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.submenu-icon{
+    filter: brightness(0) invert(1);
+}
+
+
+
+.nav-item-dropdown-small .nav-link {
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.nav-item-dropdown-small:hover .nav-link-arrow::before {
+  transform: rotateZ(-180deg);
+}
+
+.toggle-menu:hover,
+.toggle-menu:active,
+.toggle-menu:focus{
+    background: #fd3a5c;
+    border-color: #fd3a5c;
+    transition: background 0.25s, border-color 0.25s;
+    border: 1px solid #ddd;
+}
+
+
+    
+}
+.toggle-menu:hover .menu-line,
+.toggle-menu:active .menu-line,
+.toggle-menu:focus .menu-line{
+  background: #fff;
+  transition: background 0.25s;
+}
+    
+}
+
+
  

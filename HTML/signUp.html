@@ -4,11 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../CSS/signUp.css"
-    />
+    <link rel="stylesheet" type="text/css" href="../CSS/signUp.css" />
 
     <title>Create your Hotjar account - Hotjar</title>
     <link
@@ -48,13 +44,91 @@
                   <div class="google-text">Sign up with Google</div>
                 </button>
 
-                <duv class="horizontal-line">
+                <duv class="horizontal-line hidden">
                   <div class="line"></div>
                   <div class="text">OR</div>
                   <div class="line"></div>
                 </duv>
 
-                <button class="btn email">Sign up with email</button>
+                <div
+                  class="form-signup-email hide-for-signup-email"
+                  id="email_sign_up_form"
+                >
+                  <div class="input-form">
+                    <label for="name">Full name</label>
+                    <input id="input-box1"
+                      id="name"
+                      name="name"
+                      required=""
+                      class=""
+                      maxlength="50"
+                      placeholder="e.g. Mary Jackson"
+                    />
+                  </div>
+                  <div class="input-form">
+                    <label for="name">Email address</label>
+                    <input
+                      id="name"
+                      name="name"
+                      required=""
+                      class=""
+                      maxlength="50"
+                      placeholder="your@email.com"
+                    />
+                  </div>
+                  <div class="input-form password">
+                    <div role="button" class="password-show-icon">
+                     <img src="../Resources/visibility.png" class="visibility">
+                      <span>Show</span>
+                    </div>
+                    <label for="name">password</label>
+                    <input
+                      id="name"
+                      name="name"
+                      required=""
+                      class=""
+                      maxlength="50"
+                      placeholder="Set password"
+                      type="password"
+                    />
+                    <ul class="password-footer">
+                      <li><span class="bullet"></span>8 characters min.</li>
+                      <li><span class="bullet"></span>One uppercase</li>
+                      <li><span class="bullet"></span>One lowercase</li>
+                    </ul>
+                  </div>
+
+                  <div class="terms-checkbox">
+                    <input
+                      id="terms"
+                      name="terms"
+                      ng-model="registerFields.terms"
+                      required=""
+                      type="checkbox"
+                      class=""
+                    />
+                    <label for="terms" id="termsLabel"
+                      >I accept the
+                      <a
+                        class="underline black"
+                        href="https://hotjar.com/terms"
+                        target="_blank"
+                        >Terms of Service</a
+                      >.</label
+                    >
+                  </div>
+                </div>
+
+                <button
+                  class="btn email hide-for-signup-email"
+                  id="get_started"
+                >
+                  Get Started <img class="right-arrow" src="../Resources/right-start.png">
+                </button>
+
+                <button class="btn email" id="signup_with_email">
+                  Sign up with email
+                </button>
 
                 <div class="info">
                   Already have an account?
@@ -75,16 +149,85 @@
 
     <!-- Feeback tag html started -->
     <div class="feedback-container">
-      <button class="feedback">
-        <div class="feedback-text">Feedback</div>
-        <div>
-          <img
-            class="feedback-img"
-            src="../Resources/icons8-thumbs-up-60.png"
-          />
+      <div class="feedback-2-container">
+        <div class="feedback-hidden-form" id="feedback_form">
+          <button class="form-close-icon" id="feed_back_close">x</button>
+          <div class="feedback-form">
+            <div class="form-heading-text">
+              <p class="_hj-wTRLt__Title__Title _hj-1XssA__Title__compact">
+                How would you rate your experience?
+              </p>
+            </div>
+            <div class="form-icons">
+              <div class="form-icons-div form-icons-div-hide">
+                <div class="feedback-form-icon i1 attach-animation">1</div>
+                <div class="feedback-form-icon i2 attach-animation">2</div>
+                <div class="feedback-form-icon i3">3</div>
+                <div class="feedback-form-icon i4">4</div>
+                <div class="feedback-form-icon i5">5</div>
+              </div>
+            </div>
+            <div class="form-icon-bottom"></div>
+          </div>
         </div>
-      </button>
+
+        <button class="feedback-button" id="feed_back_button">
+          <div class="feedback-button-text">Feedback</div>
+          <div class="feedback-button-icon">                        
+                <img class="feedback-img" src="../Resources/icons8-thumbs-up-60.png">
+            </div>
+          </div>
+        </button>
+      </div>
     </div>
     <!-- Feeback tag html ended -->
+
+    <script>
+      document
+        .getElementById("signup_with_email")
+        .addEventListener("click", () => {
+          document
+            .getElementById("get_started")
+            .classList.toggle("hide-for-signup-email");
+          document
+            .getElementById("email_sign_up_form")
+            .classList.toggle("hide-for-signup-email");
+          document
+            .getElementById("signup_with_email")
+            .classList.toggle("hide-for-signup-email");
+        });
+
+      document
+        .getElementById("feed_back_button")
+        .addEventListener("click", () => {
+          document.getElementById("feedback_form").classList.toggle("active");
+          document
+            .getElementsByClassName("form-icons-div")[0]
+            .classList.toggle("form-icons-div-hide");
+          document
+            .getElementById("feed_back_button")
+            .classList.toggle("feed-back-button-hide");
+          var icons = document.getElementsByClassName("feedback-form-icon");
+          var i = 0;
+          for (const iconDiv of icons) {
+            console.log(i);
+            iconDiv.setAttribute("style", `animation: anime 0.3s ${i}00ms`);
+            i += 1;
+          }
+        });
+      document
+        .getElementById("feed_back_close")
+        .addEventListener("click", () => {
+          document.getElementById("feedback_form").classList.toggle("active");
+          document
+            .getElementById("feed_back_button")
+            .classList.toggle("feed-back-button-hide");
+          document
+            .getElementsByClassName("form-icons-div")[0]
+            .classList.toggle("form-icons-div-hide");
+        });
+
+
+    </script>
   </body>
 </html>
