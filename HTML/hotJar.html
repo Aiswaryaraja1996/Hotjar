@@ -17,8 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -44,8 +43,8 @@
                        </button>
 
                        <nav>
-                           <ul class="nav-small nav-item-dropdown-small">
-                               <li class="nav-item-small">
+                           <ul class="nav-small ">
+                               <li class="nav-item-small nav-item-dropdown-small">
                                    <a title="Product" class="nav-link nav-link-arrow" id="drop-down1" aria-haspopup="true" aria-expanded="false" href="#">Product</a>
                                 <ul class="nav-sub-menu">
                                     <li>
@@ -100,7 +99,7 @@
                                     
                                     </ul>
                                 </li>
-                             <li class="nav-item-small">
+                             <li class="nav-item-small nav-item-dropdown-small">
                                    <a title="Product" class="nav-link nav-link-arrow" id="drop-down2" aria-haspopup="true" aria-expanded="false" href="#">Why Hotjar?</a>
                                 <ul class="nav-sub-menu">
                                     <li>
@@ -137,9 +136,10 @@
                                     </li>
                                     </ul>
                                 </li>
-                               <li class="nav-item-small">   <li class="nav-item-small">
-                                   <a title="Product" class="nav-link nav-link-arrow" href="#">Pricing</a></li>
-                               <li class="nav-item-small">   <li class="nav-item-small">
+                               <li class="nav-item-small"> 
+                                   <a title="Product" class="nav-link" href="#">Pricing</a>
+                                </li>
+                               <li class="nav-item-small nav-item-dropdown-small">   
                                    <a title="Product" class="nav-link nav-link-arrow" id="drop-down3" aria-haspopup="true" aria-expanded="false" href="#">Learn</a>
                                 <ul class="nav-sub-menu">
                                     <li>
@@ -176,7 +176,7 @@
                                     </li>
                                     </ul>
                                 </li>
-                               <li class="nav-item-small">   <li class="nav-item-small">
+                               <li class="nav-item-small">   <li class="nav-item-small nav-item-dropdown-small">
                                    <a title="Product" class="nav-link nav-link-arrow" id="drop-down4" aria-haspopup="true" aria-expanded="false" href="#">Company</a>
                                 <ul class="nav-sub-menu">
                                     <li>
@@ -207,16 +207,16 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item-small">   <li class="nav-item-small">
-                                   <a title="Product" class="nav-link nav-link-arrow" href="#">Try it free</a></li>
+                                   <a title="Product" class="nav-link " href="#">Try it free</a></li>
                                <li class="nav-item-small">   <li class="nav-item-small">
-                                   <a title="Product" class="nav-link nav-link-arrow" href="#">Sign in</a></li>
+                                   <a title="Product" class="nav-link" href="#">Sign in</a></li>
                                
                            </ul>
                        </nav>
 
                    </section>
          
-                <section class="menu-header">
+                <section class="menu-header ">
                     <nav>
   
                         <ul class="nav">
@@ -395,8 +395,12 @@
                         </ul>
                     </nav>
                 </section>
+
+               
             </div>
         </div>
+   
+   
     </header>
 <!-- Nav bar changes ended -->
 
@@ -1004,14 +1008,10 @@
         }
       }
       var menuSection = document.getElementsByClassName("small-screen-menu")[0];
-
+      var arrow = document.getElementsByClassName("nav-link-arrow")[0];
       function openMenu(){
-         console.log(window.innerWidth)
-         console.log(1);
-          if(window.innerWidth > 768){
-              menuSection.style.display = "none";
-          }
-          else{menuSection.style.display = "flex";}
+        menuSection.style.display = "flex";
+
             
       }
 
