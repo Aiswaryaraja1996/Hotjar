@@ -25,13 +25,24 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
       rel="stylesheet"
     />
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <!-- Nav bar changes started -->
     <header class="header">
-      <div>
+      <div class="inner-header-div">
         <div class="inner-header">
           <a
             href="file:///C:/Users/rajap/Desktop/masailearning/PROJECT1/HOTJAR/hotJar.html"
@@ -623,6 +634,7 @@
       </div>
 
       <div class="productSlider">
+        <h2 class="tour-title-hidden">Here's how it works</h2>
         <div class="mid-Content">
           <div class="prod-img-switch">
             <div class="img-slide">
@@ -655,8 +667,51 @@
             </div>
           </div>
 
+          <div class="menu-switch-mid-screen">
+            <div class="menu-switch-icons">
+              <div class="menu-item">
+                <div class="menu-icon">
+                  <img class="menuIcon" src="../Resources/fire.png" />
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-icon">
+                  <img class="menuIcon" src="../Resources/video-camera.png" />
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-icon">
+                  <img class="menuIcon" src="../Resources/feedback.png" />
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-icon">
+                  <img class="menuIcon" src="../Resources/bar-graph.png" />
+                </div>
+              </div>
+            </div>
+            <div>
+              <h3 class="section-label-mid-screen">Behaviour</h3>
+              <h3 class="section-label-mid-screen">Recordings</h3>
+              <h3 class="section-label-mid-screen">Incoming Feedback</h3>
+              <h3 class="section-label-mid-screen">Surveys</h3>
+            </div>
+            <div class="learn-more">
+              <a class="list-item" href="">
+                <span>Full product tour</span>
+                <img class="arrow" src="../Resources/right-arrow.png" />
+                <p>Read what Hotjar offers</p>
+              </a>
+
+              <a class="list-item" href="">
+                <span>See it in action</span>
+                <img class="arrow" src="../Resources/right-arrow.png" />
+                <p>Try our interactive demo</p>
+              </a>
+            </div>
+          </div>
+
           <div class="menu-switch">
-            <h2 class="tour-title">Here's how it works</h2>
             <h3 class="section-label">BEHAVIOUR</h3>
             <div class="menu-item">
               <div class="menu-icon">
@@ -706,6 +761,7 @@
         </div>
         <div class="logos-image">
           <img
+            id="brands_image"
             src="https://static-cms.hotjar.com/documents/social-proof-company-logos-desktop.svg"
             alt="companies logos"
           />
@@ -760,7 +816,7 @@
       </div>
 
       <div class="case-study">
-        <div>
+        <div class="case-study-div">
           <h2 class="sectionH2">
             Most Product Managers, Designers and Analysts pick Hotjar
           </h2>
@@ -820,126 +876,206 @@
       </div>
 
       <div class="video-slider">
-        <div class="testimonialSliderWrapper">
-          <div class="testimonialSlider">
-            <div class="testimonialSlide">
-              <div
-                class="slideInner"
-                style="
-                  background-image: url(https://static-cms.hotjar.com/original_images/testimonials-thumb-invision.jpg);
-                "
-              >
-                <div class="quote">
-                  "Hotjar is a critical tool for us to understand our users and
-                  identify any points where they might be getting stuck.”
-                </div>
-                <div class="videoTitle">
-                  <h6>
-                    Mike Fiorillo
-                    <br />
-                    <span>Growth Product Manager</span>
-                  </h6>
-                  <img
-                    src="https://static-cms.hotjar.com/documents/testimonials-invision-fit_EooWC3H.svg"
-                    alt="testimonials unbounce logo"
-                  />
-                </div>
-                <div class="play-button"></div>
+        <div
+          class="testimonials-div 1"
+          style="
+            background-image: url(https://static-cms.hotjar.com/original_images/testimonials-thumb-invision.jpg);
+          "
+        >
+          <div class="testimonial-slide">
+            <div class="testimonial-play-button" id="play-button"></div>
+            <div class="video-details">
+              <div class="quote">
+                "If you can’t figure out why your users are bouncing, Hotjar
+                Surveys is a really direct way to ask them.”
               </div>
-            </div>
-            <div class="testimonialSlide">
-              <div
-                class="slideInner"
-                style="
-                  background-image: url(https://static-cms.hotjar.com/original_images/testimonials-thumb-reed.jpg);
-                "
-              >
-                <div class="quote">
-                  "We like to make people happy at Reed.co.uk and Hotjar’s
-                  Incoming Feedback shows us how well we're doing.”
-                </div>
-                <div class="videoTitle">
-                  <h6>
-                    Brett Orr
-                    <br />
-                    <span>Lead Product Owner</span>
-                  </h6>
-                  <img
-                    src="https://static-cms.hotjar.com/documents/testimonials-reed-fit_14z7ahZ.svg"
-                    alt="testimonials unbounce logo"
-                  />
-                </div>
-                <div class="play-button"></div>
-              </div>
-            </div>
-            <div class="testimonialSlide">
-              <div
-                class="slideInner"
-                style="
-                  background-image: url(https://static-cms.hotjar.com/original_images/testimonials-thumb-hubspot.jpg);
-                "
-              >
-                <div class="quote">
-                  "If you can’t figure out why your users are bouncing, Hotjar
-                  Surveys is a really direct way to ask them.”
-                </div>
-                <div class="videoTitle">
-                  <h6>
-                    Eric Peters
-                    <br />
-                    <span>Growth Marketer</span>
-                  </h6>
-                  <img
-                    src="https://static-cms.hotjar.com/documents/testimonials-hubspot-fit_RQy9Nsu.svg"
-                    alt="testimonials unbounce logo"
-                  />
-                </div>
-                <div class="play-button"></div>
-              </div>
-            </div>
-            <div class="testimonialSlide">
-              <div
-                class="slideInner"
-                style="
-                  background-image: url(https://static-cms.hotjar.com/original_images/testimonials-thumb-unbounce.jpg);
-                "
-              >
-                <div class="quote">
-                  "I used to have a bunch of different tools I had to pay for,
-                  with Hotjar you get everything in one bundle.”
-                </div>
-                <div class="videoTitle">
-                  <h6>
-                    Michael Aagaard
-                    <br />
-                    <span>Senior conversion optimizer</span>
-                  </h6>
-                  <img
-                    src="https://static-cms.hotjar.com/documents/testimonials-unbounce-fit_YjvKJv9.svg"
-                    alt="testimonials unbounce logo"
-                  />
-                </div>
-                <div class="play-button"></div>
+              <div class="video-title">
+                <h6>
+                  Eric Peters
+                  <br />
+                  <span>Growth Marketer</span>
+                </h6>
+                <img
+                  class="testimonial-image"
+                  src="https://static-cms.hotjar.com/documents/testimonials-hubspot-fit_RQy9Nsu.svg"
+                  alt="testimonials unbounce logo"
+                />
               </div>
             </div>
           </div>
         </div>
-
+        <div
+          class="testimonials-div 2 testimonials-div-hide"
+          style="
+            background-image: url(https://static-cms.hotjar.com/original_images/testimonials-thumb-reed.jpg);
+          "
+        >
+          <div class="testimonial-slide">
+            <div class="testimonial-play-button" id="play-button"></div>
+            <div class="video-details">
+              <div class="quote">
+                "Hotjar is a critical tool for us to understand our users and
+                identify any points where they might be getting stuck.”
+              </div>
+              <div class="video-title">
+                <h6>
+                  Mike Fiorillo
+                  <br />
+                  <span>Growth Product Manager</span>
+                </h6>
+                <img
+                  class="testimonial-image"
+                  src="https://static-cms.hotjar.com/documents/testimonials-invision-fit_EooWC3H.svg"
+                  alt="testimonials unbounce logo"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="testimonials-div 3 testimonials-div-hide"
+          style="
+            background-image: url(https://static-cms.hotjar.com/original_images/testimonials-thumb-hubspot.jpg);
+          "
+        >
+          <div class="testimonial-slide">
+            <div class="testimonial-play-button" id="play-button"></div>
+            <div class="video-details">
+              <div class="quote">
+                "We like to make people happy at Reed.co.uk and Hotjar’s
+                Incoming Feedback shows us how well we're doing.”
+              </div>
+              <div class="video-title">
+                <h6>
+                  Brett Orr
+                  <br />
+                  <span>Lead Product Owner</span>
+                </h6>
+                <img
+                  class="testimonial-image"
+                  src="https://static-cms.hotjar.com/documents/testimonials-reed-fit_14z7ahZ.svg"
+                  alt="testimonials unbounce logo"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="testimonials-div 4 testimonials-div-hide"
+          style="
+            background-image: url(https://static-cms.hotjar.com/original_images/testimonials-thumb-unbounce.jpg);
+          "
+        >
+          <div class="testimonial-slide">
+            <div class="testimonial-play-button" id="play-button"></div>
+            <div class="video-details">
+              <div class="quote">
+                "If you can’t figure out why your users are bouncing, Hotjar
+                Surveys is a really direct way to ask them.”
+              </div>
+              <div class="video-title">
+                <h6>
+                  Michael Aagaard
+                  <br />
+                  <span>Senior conversion optimizer</span>
+                </h6>
+                <img
+                  class="testimonial-image"
+                  src="https://static-cms.hotjar.com/documents/testimonials-unbounce-fit_YjvKJv9.svg"
+                  alt="testimonials unbounce logo"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
         <ul class="sliders">
           <li>
-            <button class="slide-line"></button>
+            <button class="slide-line 1 slider-button-active"></button>
           </li>
           <li>
-            <button class="slide-line"></button>
+            <button class="slide-line 2"></button>
           </li>
           <li>
-            <button class="slide-line"></button>
+            <button class="slide-line 3"></button>
           </li>
           <li>
-            <button class="slide-line"></button>
+            <button class="slide-line 4"></button>
           </li>
         </ul>
+        <div class="video-details-mid-screen 1">
+          <div class="quote-mid-screen">
+            "If you can’t figure out why your users are bouncing, Hotjar Surveys
+            is a really direct way to ask them.”
+          </div>
+          <div class="video-title-mid-screen">
+            <h6>
+              Eric Peters
+              <br />
+              <span>Growth Marketer</span>
+            </h6>
+            <img
+              class="testimonial-image"
+              src="https://static-cms.hotjar.com/documents/testimonials-hubspot-fit_RQy9Nsu.svg"
+              alt="testimonials unbounce logo"
+            />
+          </div>
+        </div>
+        <div class="video-details-mid-screen 2 video-details-mid-screen-hide">
+          <div class="quote-mid-screen">
+            "Hotjar is a critical tool for us to understand our users and
+            identify any points where they might be getting stuck.”
+          </div>
+          <div class="video-title-mid-screen">
+            <h6>
+              Mike Fiorillo
+              <br />
+              <span>Growth Product Manager</span>
+            </h6>
+            <img
+              class="testimonial-image"
+              src="https://static-cms.hotjar.com/documents/testimonials-invision-fit_EooWC3H.svg"
+              alt="testimonials unbounce logo"
+            />
+          </div>
+        </div>
+        <div class="video-details-mid-screen 3 video-details-mid-screen-hide">
+          <div class="quote-mid-screen">
+            "We like to make people happy at Reed.co.uk and Hotjar’s Incoming
+            Feedback shows us how well we're doing.”
+          </div>
+          <div class="video-title-mid-screen">
+            <h6>
+              Brett Orr
+              <br />
+              <span>Lead Product Owner</span>
+            </h6>
+            <img
+              class="testimonial-image"
+              src="https://static-cms.hotjar.com/documents/testimonials-reed-fit_14z7ahZ.svg"
+              alt="testimonials unbounce logo"
+            />
+          </div>
+        </div>
+        <div class="video-details-mid-screen 4 video-details-mid-screen-hide">
+          <div class="quote-mid-screen">
+            "If you can’t figure out why your users are bouncing, Hotjar Surveys
+            is a really direct way to ask them.”
+          </div>
+          <div class="video-title-mid-screen">
+            <h6>
+              Michael Aagaard
+              <br />
+              <span>Senior conversion optimizer</span>
+            </h6>
+            <img
+              class="testimonial-image"
+              src="https://static-cms.hotjar.com/documents/testimonials-unbounce-fit_YjvKJv9.svg"
+              alt="testimonials unbounce logo"
+            />
+          </div>
+        </div>
       </div>
+
       <div class="platform-header">
         <h2 class="sectionH2">
           Hotjar works out of the box on most popular platforms
@@ -1173,8 +1309,70 @@
     </div>
 
     <!-- Feedback icon ended -->
-    <script src="../javaScript/headerFooter.js"></script>
+
+    <!-- video dialog -->
+    <div class="video-dialog" id="video_dialog">
+      <div class="video-player-container">
+        <div class="close-button" id="close_button">
+          <img src="../Resources/delete.png" />
+        </div>
+        <video src="" class="video"></video>
+        <div class="video-controls">
+          <div id="video-play-button">
+            <img src="../Resources/play-button-arrowhead.png" />
+          </div>
+          <div class="video-porgress-bar">
+            <div class="video-progress">
+              <div class="video-progress-main"></div>
+              <div class="video-progress-dragger"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script>
+      var videoDialogEle = document.getElementById("video_dialog");
+      var playButtonEles = document.getElementsByClassName(
+        "testimonial-play-button"
+      );
+
+      for (const playButton of playButtonEles) {
+        playButton.addEventListener("click", () => {
+          videoDialogEle.setAttribute("style", "display:flex");
+        });
+      }
+
+      document.getElementById("close_button").addEventListener("click", () => {
+        videoDialogEle.setAttribute("style", "display:none");
+      });
+
+      var videoEle = document.getElementsByClassName("video")[0];
+      var videoProgress = document.getElementsByClassName(
+        "video-progress-main"
+      )[0];
+      var videoDragger = document.getElementsByClassName(
+        "video-progress-dragger"
+      )[0];
+
+      document
+        .getElementById("video-play-button")
+        .addEventListener("click", () => {
+          if (videoEle.paused) {
+            console.log("video playing");
+            videoEle.play();
+          } else {
+            console.log("video paused");
+            videoEle.pause();
+          }
+        });
+
+      videoEle.addEventListener("timeupdate", () => {
+        var pos = videoEle.currentTime / videoEle.duration;
+        videoProgress.setAttribute("style", `width: ${pos * 100}%`);
+        videoDragger.setAttribute("style", `left: ${pos * 100}%`);
+      });
+
       var myIndex = 0;
       var count2 = 0;
       imgSlide();
@@ -1185,11 +1383,13 @@
         var x = document.getElementsByClassName("img-slide");
         var y = document.getElementsByClassName("menu-title");
         var z = document.getElementsByClassName("menuIcon");
+        var k = document.getElementsByClassName("section-label-mid-screen");
         for (i = 0; i < x.length; i++) {
           x[i].style.display = "none";
           y[i].style.color = "#c5c5c5";
           y[i].style.fontWeight = "normal";
           z[i].style.width = "30px";
+          k[i].classList.remove("active-text");
         }
         myIndex++;
         if (myIndex > x.length) {
@@ -1198,28 +1398,170 @@
         x[myIndex - 1].style.display = "block";
         y[myIndex - 1].style.color = "#f4364c";
         y[myIndex - 1].style.fontWeight = "700";
-        z[myIndex - 1].style.width = "35px";
+        z[myIndex - 1].style.width = "37px";
+        k[myIndex - 1].classList.add("active-text");
         setTimeout(imgSlide, 2000);
       }
 
-      function videoSlide() {
-        console.log(2);
-        var i;
-        var m = document.getElementsByClassName("testimonialSlide");
-        var n = document.getElementsByClassName("slide-line");
+      // function videoSlide() {
+      //   console.log(2);
+      //   var i;
+      //   var m = document.getElementsByClassName("testimonialSlide");
+      //   var n = document.getElementsByClassName("slide-line");
 
-        for (i = 0; i < m.length; i++) {
-          m[i].style.display = "none";
-          n[i].style.backgroundColor = "#e1e1e1";
+      //   for (i = 0; i < m.length; i++) {
+      //     m[i].style.display = "none";
+      //     n[i].style.backgroundColor = "#e1e1e1";
+      //   }
+      //   count2++;
+      //   if (count2 > m.length) {
+      //     count2 = 1;
+      //   }
+      //   m[count2 - 1].style.display = "block";
+      //   n[count2 - 1].style.backgroundColor = "#fd385b";
+      //   // setTimeout(videoSlide, 5000);
+      // }
+
+      var slideCount = 1;
+
+      function videoSlide() {
+        if (!slideCount) slideCount = 1;
+        var testimonialDivs =
+          document.getElementsByClassName("testimonials-div");
+        var testimonailDescriptionDivs = document.getElementsByClassName(
+          "video-details-mid-screen"
+        );
+        var testimonailSliderfooters =
+          document.getElementsByClassName("slide-line");
+
+        for (const iterator of [1, 2, 3, 4]) {
+          var testimonialDiv = testimonialDivs[iterator - 1];
+          var testimonailDescriptionDiv =
+            testimonailDescriptionDivs[iterator - 1];
+          var testimonailSliderfooter = testimonailSliderfooters[iterator - 1];
+
+          if (testimonialDiv.classList[1] == `${slideCount}`) {
+            testimonialDiv.classList.remove("testimonials-div-hide");
+          } else {
+            testimonialDiv.classList.add("testimonials-div-hide");
+          }
+
+          if (testimonailDescriptionDiv.classList[1] == `${slideCount}`) {
+            testimonailDescriptionDiv.classList.remove(
+              "video-details-mid-screen-hide"
+            );
+          } else {
+            testimonailDescriptionDiv.classList.add(
+              "video-details-mid-screen-hide"
+            );
+          }
+
+          if (testimonailSliderfooter.classList[1] == `${slideCount}`) {
+            testimonailSliderfooter.classList.add("slider-button-active");
+          } else {
+            testimonailSliderfooter.classList.remove("slider-button-active");
+          }
         }
-        count2++;
-        if (count2 > m.length) {
-          count2 = 1;
+
+        if (slideCount === 4) {
+          slideCount = 1;
+        } else {
+          slideCount += 1;
         }
-        m[count2 - 1].style.display = "block";
-        n[count2 - 1].style.backgroundColor = "#fd385b";
+
         setTimeout(videoSlide, 5000);
       }
+
+      document
+        .getElementsByClassName("toggle-menu")[0]
+        .addEventListener("click", () => {
+          document
+            .getElementsByClassName("small-screen-menu")[0]
+            .classList.toggle("is-visible");
+          document
+            .getElementsByClassName("blurr-background")[0]
+            .classList.toggle("make-visible");
+        });
+      document
+        .getElementsByClassName("closeIcon")[0]
+        .addEventListener("click", () => {
+          document
+            .getElementsByClassName("small-screen-menu")[0]
+            .classList.remove("is-visible");
+          document
+            .getElementsByClassName("blurr-background")[0]
+            .classList.remove("make-visible");
+        });
+
+      var c1 = 0;
+      var c2 = 0;
+      var c3 = 0;
+      var c4 = 0;
+
+      document.getElementById("drop-down1").addEventListener("click", () => {
+        c1++;
+
+        if (c1 === 2) {
+          document
+            .getElementById("drop-down1")
+            .setAttribute("aria-expanded", "false");
+          c1 = 0;
+        } else {
+          document
+            .getElementById("drop-down1")
+            .setAttribute("aria-expanded", "true");
+        }
+      });
+
+      document.getElementById("drop-down2").addEventListener("click", () => {
+        c2++;
+        if (c2 === 2) {
+          document
+            .getElementById("drop-down2")
+            .setAttribute("aria-expanded", "false");
+          c2 = 0;
+        } else {
+          document
+            .getElementById("drop-down2")
+            .setAttribute("aria-expanded", "true");
+        }
+      });
+
+      document.getElementById("drop-down3").addEventListener("click", () => {
+        c3++;
+        if (c3 === 2) {
+          document
+            .getElementById("drop-down3")
+            .setAttribute("aria-expanded", "false");
+          c3 = 0;
+        } else {
+          document
+            .getElementById("drop-down3")
+            .setAttribute("aria-expanded", "true");
+        }
+      });
+      document.getElementById("drop-down4").addEventListener("click", () => {
+        c4++;
+        if (c4 === 2) {
+          document
+            .getElementById("drop-down4")
+            .setAttribute("aria-expanded", "false");
+          c4 = 0;
+        } else {
+          document
+            .getElementById("drop-down4")
+            .setAttribute("aria-expanded", "true");
+        }
+      });
+
+      document
+        .getElementById("hot_jar_footer_title")
+        .addEventListener("click", () => {
+          console.log("clicked");
+          document
+            .getElementById("hot_jar_footer_list")
+            .classList.toggle("footer-item-list-hide");
+        });
     </script>
   </body>
 </html>
