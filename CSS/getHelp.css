@@ -387,7 +387,7 @@ a > button {
   }
   #first > p,
   #second > p {
-    line-height: 20px;
+    line-height: 24px;
   }
   #topics-cont {
     grid-template:

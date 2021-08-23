@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="../CSS/hotJar.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/headerFooter.css" />
 
     <title>Hotjar: Website Heatmaps &amp; Behavior Analytics Tools</title>
     <link
@@ -24,7 +25,7 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    
   </head>
 
   <body>
@@ -49,17 +50,18 @@
               <span class="menu-line"></span>
             </button>
           </div>
+
           <section class="small-screen-menu">
             <button class="first-menu">
               <img class="closeIcon" src="../Resources/delete.png" />
             </button>
 
             <nav>
-              <ul class="nav-small">
-                <li class="nav-item-small nav-item-dropdown-small">
+              <ul class="nav">
+                <li class="nav-item nav-item-dropdown">
                   <a
                     title="Product"
-                    class="nav-link nav-link-arrow"
+                    class="nav-link"
                     id="drop-down1"
                     aria-haspopup="true"
                     aria-expanded="false"
@@ -127,10 +129,10 @@
                     </li>
                   </ul>
                 </li>
-                <li class="nav-item-small nav-item-dropdown-small">
+                <li class="nav-item nav-item-dropdown">
                   <a
                     title="Product"
-                    class="nav-link nav-link-arrow"
+                    class="nav-link"
                     id="drop-down2"
                     aria-haspopup="true"
                     aria-expanded="false"
@@ -173,13 +175,13 @@
                     </li>
                   </ul>
                 </li>
-                <li class="nav-item-small">
+                <li class="nav-item">
                   <a title="Product" class="nav-link" href="#">Pricing</a>
                 </li>
-                <li class="nav-item-small nav-item-dropdown-small">
+                <li class="nav-item nav-item-dropdown">
                   <a
                     title="Product"
-                    class="nav-link nav-link-arrow"
+                    class="nav-link"
                     id="drop-down3"
                     aria-haspopup="true"
                     aria-expanded="false"
@@ -218,11 +220,11 @@
                     </li>
                   </ul>
                 </li>
-                <li class="nav-item-small"></li>
-                <li class="nav-item-small nav-item-dropdown-small">
+
+                <li class="nav-item nav-item-dropdown">
                   <a
                     title="Product"
-                    class="nav-link nav-link-arrow"
+                    class="nav-link"
                     id="drop-down4"
                     aria-haspopup="true"
                     aria-expanded="false"
@@ -254,12 +256,14 @@
                     </li>
                   </ul>
                 </li>
-                <li class="nav-item-small"></li>
-                <li class="nav-item-small">
-                  <a title="Product" class="nav-link" href="#">Try it free</a>
+
+                <li class="nav-item">
+                  <a title="Product" class="nav-link try-it-free" href="#"
+                    >Try it free</a
+                  >
                 </li>
-                <li class="nav-item-small"></li>
-                <li class="nav-item-small">
+
+                <li class="nav-item">
                   <a title="Product" class="nav-link" href="#">Sign in</a>
                 </li>
               </ul>
@@ -270,9 +274,7 @@
             <nav>
               <ul class="nav">
                 <li class="nav-item nav-item-dropdown">
-                  <a title="Product" class="nav-link nav-link-arrow" href="">
-                    Product
-                  </a>
+                  <a title="Product" class="nav-link" href=""> Product </a>
                   <ul class="sub-menu">
                     <li>
                       <a title="Heatmaps" class="submenu-link" href="">
@@ -354,9 +356,7 @@
                   </ul>
                 </li>
                 <li class="nav-item nav-item-dropdown">
-                  <a title="Product" class="nav-link nav-link-arrow" href="">
-                    Why Hotjar?
-                  </a>
+                  <a title="Product" class="nav-link" href=""> Why Hotjar? </a>
                   <ul class="sub-menu singleColumn">
                     <li>
                       <a
@@ -430,9 +430,7 @@
                   </a>
                 </li>
                 <li class="nav-item nav-item-dropdown">
-                  <a title="Product" class="nav-link nav-link-arrow" href="/">
-                    Learn
-                  </a>
+                  <a title="Product" class="nav-link" href="/"> Learn </a>
                   <ul class="sub-menu singleColumn">
                     <li>
                       <a
@@ -497,9 +495,7 @@
                   </ul>
                 </li>
                 <li class="nav-item nav-item-dropdown">
-                  <a title="Product" class="nav-link nav-link-arrow" href="">
-                    Company
-                  </a>
+                  <a title="Product" class="nav-link" href=""> Company </a>
                   <ul class="sub-menu singleColumn">
                     <li>
                       <a
@@ -565,6 +561,8 @@
               </ul>
             </nav>
           </section>
+
+          <div class="blurr-background"></div>
         </div>
       </div>
     </header>
@@ -608,12 +606,12 @@
       </div>
       <div class="sign-btn">
         <div>
-          <a href="" title="Sign up with Google" class="google-signup">
+          <a href="" title="Sign up with Google" class="signup-btn google">
             <img class="google-logo" src="../Resources/google.png" />
 
             <span class="google-text">Sign up with Google</span>
           </a>
-          <a href="" title="Sign up with Email" class="sign-email">
+          <a href="" title="Sign up with Email" class="signup-btn email">
             Sign up with Email
           </a>
         </div>
@@ -624,78 +622,80 @@
         </div>
       </div>
 
-      <div class="mid-Content">
-        <div class="prod-img-switch">
-          <div class="img-slide">
-            <img
-              class="slideImage"
-              src="https://static-cms.hotjar.com/original_images/prod-tour-heatmap.png"
-              alt="product tour feature heatmap"
-            />
+      <div class="productSlider">
+        <div class="mid-Content">
+          <div class="prod-img-switch">
+            <div class="img-slide">
+              <img
+                class="slideImage"
+                src="https://static-cms.hotjar.com/original_images/prod-tour-heatmap.png"
+                alt="product tour feature heatmap"
+              />
+            </div>
+            <div class="img-slide">
+              <img
+                class="slideImage"
+                src="https://static-cms.hotjar.com/original_images/prod-tour-recordings.png"
+                alt="product tour feature recordings"
+              />
+            </div>
+            <div class="img-slide">
+              <img
+                class="slideImage"
+                src="https://static-cms.hotjar.com/original_images/prod-tour-inc-feedback.png"
+                alt="product tour feature incoming feedback"
+              />
+            </div>
+            <div class="img-slide">
+              <img
+                class="slideImage"
+                src="https://static-cms.hotjar.com/original_images/prod-tour-polls.png"
+                alt="product tour feature polls"
+              />
+            </div>
           </div>
-          <div class="img-slide">
-            <img
-              class="slideImage"
-              src="https://static-cms.hotjar.com/original_images/prod-tour-recordings.png"
-              alt="product tour feature recordings"
-            />
-          </div>
-          <div class="img-slide">
-            <img
-              class="slideImage"
-              src="https://static-cms.hotjar.com/original_images/prod-tour-inc-feedback.png"
-              alt="product tour feature incoming feedback"
-            />
-          </div>
-          <div class="img-slide">
-            <img
-              class="slideImage"
-              src="https://static-cms.hotjar.com/original_images/prod-tour-polls.png"
-              alt="product tour feature polls"
-            />
-          </div>
-        </div>
 
-        <div class="menu-switch">
-          <h2 class="tour-title">Here's how it works</h2>
-          <h3 class="section-label">BEHAVIOUR</h3>
-          <div class="menu-item">
-            <div class="menu-icon">
-              <img src="../Resources/fire.png" />
+          <div class="menu-switch">
+            <h2 class="tour-title">Here's how it works</h2>
+            <h3 class="section-label">BEHAVIOUR</h3>
+            <div class="menu-item">
+              <div class="menu-icon">
+                <img class="menuIcon" src="../Resources/fire.png" />
+              </div>
+              <div class="menu-title">Heatmaps</div>
             </div>
-            <div class="menu-title">Heatmaps</div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-icon">
-              <img src="../Resources/video-camera.png" />
+            <div class="menu-item">
+              <div class="menu-icon">
+                <img class="menuIcon" src="../Resources/video-camera.png" />
+              </div>
+              <div class="menu-title">Recordings</div>
             </div>
-            <div class="menu-title">Recordings</div>
-          </div>
-          <h3 class="section-label">FEEDBACK</h3>
-          <div class="menu-item">
-            <div class="menu-icon">
-              <img src="../Resources/chat.png" />
+            <h3 class="section-label">FEEDBACK</h3>
+            <div class="menu-item">
+              <div class="menu-icon">
+                <img class="menuIcon" src="../Resources/chat.png" />
+              </div>
+              <div class="menu-title">Incoming Feedback</div>
             </div>
-            <div class="menu-title">Incoming Feedback</div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-icon">
-              <img src="../Resources/bar-graph.png" />
+            <div class="menu-item">
+              <div class="menu-icon">
+                <img class="menuIcon" src="../Resources/bar-graph.png" />
+              </div>
+              <div class="menu-title">Surveys</div>
             </div>
-            <div class="menu-title">Surveys</div>
-          </div>
-          <div class="learn-more">
-            <a class="list-item" href="">
-              <span>Full product tour</span>
-              <img class="arrow" src="../Resources/right-arrow.png" />
-              <p>Read what Hotjar offers</p>
-            </a>
+            <div class="learn-more">
+              <a class="list-item" href="">
+                <span>Full product tour</span>
+                <img class="arrow" src="../Resources/right-arrow.png" />
+                <p>Read what Hotjar offers</p>
+              </a>
 
-            <a class="list-item" href="">
-              <span>See it in action</span>
-              <img class="arrow" src="../Resources/right-arrow.png" />
-              <p>Try our interactive demo</p>
-            </a>
+              <a class="list-item" href="">
+                <span>See it in action</span>
+                <img class="arrow" src="../Resources/right-arrow.png" />
+                <p>Try our interactive demo</p>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -754,7 +754,7 @@
         </div>
 
         <div class="content-text">
-          <h4>GDPR and CCPA</h4>
+          <h4><a href="#">GDPR</a> and <a href="#">CCPA</a></h4>
           <span>Keeping end-user privacy at the center of what we do.</span>
         </div>
       </div>
@@ -982,7 +982,13 @@
             <nav class="footer-nav">
               <ul class="footer-list">
                 <li class="footer-item">
-                  <span class="footer-title hotjar">HOTJAR</span>
+                  <span class="footer-title hotjar"
+                    >HOTJAR
+                    <div class="arrow-hide">
+                      <img src="../Resources/arrow-down-sign-to-navigate.png" />
+                    </div>
+                  </span>
+
                   <ul class="footer-subnav hotjar">
                     <li class="subnav-item">
                       <a class="subnav-item-link" href="">Product tour</a>
@@ -1014,7 +1020,13 @@
                 </li>
 
                 <li class="footer-item">
-                  <span class="footer-title resourses">RESOURCES</span>
+                  <span class="footer-title resourses"
+                    >RESOURCES
+                    <div class="arrow-hide">
+                      <img src="../Resources/arrow-down-sign-to-navigate.png" />
+                    </div>
+                  </span>
+
                   <ul class="footer-subnav resourses">
                     <li class="subnav-item">
                       <a class="subnav-item-link" href="">Blog</a>
@@ -1061,7 +1073,13 @@
                 </li>
 
                 <li class="footer-item">
-                  <span class="footer-title compliance">COMPLIANCE</span>
+                  <span class="footer-title compliance"
+                    >COMPLIANCE
+                    <div class="arrow-hide">
+                      <img src="../Resources/arrow-down-sign-to-navigate.png" />
+                    </div>
+                  </span>
+
                   <ul class="footer-subnav compliance">
                     <li class="subnav-item">
                       <a class="subnav-item-link" href="">
@@ -1092,7 +1110,13 @@
                 </li>
 
                 <li class="footer-item">
-                  <span class="footer-title company">COMPANY</span>
+                  <span class="footer-title company"
+                    >COMPANY
+                    <div class="arrow-hide">
+                      <img src="../Resources/arrow-down-sign-to-navigate.png" />
+                    </div>
+                  </span>
+
                   <ul class="footer-subnav company">
                     <li class="subnav-item">
                       <a class="subnav-item-link" href="">About us</a>
@@ -1149,7 +1173,7 @@
     </div>
 
     <!-- Feedback icon ended -->
-
+    <script src="../javaScript/headerFooter.js"></script>
     <script>
       var myIndex = 0;
       var count2 = 0;
@@ -1160,10 +1184,12 @@
         var i;
         var x = document.getElementsByClassName("img-slide");
         var y = document.getElementsByClassName("menu-title");
+        var z = document.getElementsByClassName("menuIcon");
         for (i = 0; i < x.length; i++) {
           x[i].style.display = "none";
           y[i].style.color = "#c5c5c5";
           y[i].style.fontWeight = "normal";
+          z[i].style.width = "30px";
         }
         myIndex++;
         if (myIndex > x.length) {
@@ -1172,6 +1198,7 @@
         x[myIndex - 1].style.display = "block";
         y[myIndex - 1].style.color = "#f4364c";
         y[myIndex - 1].style.fontWeight = "700";
+        z[myIndex - 1].style.width = "35px";
         setTimeout(imgSlide, 2000);
       }
 
@@ -1193,109 +1220,6 @@
         n[count2 - 1].style.backgroundColor = "#fd385b";
         setTimeout(videoSlide, 5000);
       }
-
-      var footerTitleList = document.getElementsByClassName("footer-title");
-      for (const footerTitle of footerTitleList) {
-        footerTitle.addEventListener("click", (e) => {
-          console.log(e.target.classList[1]);
-          onClickFooterTitle(e);
-        });
-      }
-
-      onClickFooterTitle = (event) => {
-        var footerContentList =
-          document.getElementsByClassName("footer-subnav");
-        for (const footerContent of footerContentList) {
-          if (event.target.classList[1] === footerContent.classList[1]) {
-            footerContent.classList.toggle("footer-item-list-hide");
-          }
-        }
-      };
-      var menuSection = document.getElementsByClassName("small-screen-menu")[0];
-      var arrow = document.getElementsByClassName("nav-link-arrow")[0];
-      function openMenu() {
-        menuSection.style.display = "flex";
-      }
-
-      function closeMenu() {
-        menuSection.style.display = "none";
-        menuSection.removeEventListener("click", openMenu);
-      }
-
-      var toggleBtn = document.getElementsByClassName("small-screen-nav")[0];
-      toggleBtn.addEventListener("click", openMenu);
-
-      var closeButton = document.getElementsByClassName("closeIcon")[0];
-      closeButton.addEventListener("click", closeMenu);
-
-      var c1 = 0;
-      var c2 = 0;
-      var c3 = 0;
-      var c4 = 0;
-
-      document.getElementById("drop-down1").addEventListener("click", () => {
-        c1++;
-        if (c1 === 2) {
-          document
-            .getElementById("drop-down1")
-            .setAttribute("aria-expanded", "false");
-          c1 = 0;
-        } else {
-          document
-            .getElementById("drop-down1")
-            .setAttribute("aria-expanded", "true");
-        }
-      });
-
-      document.getElementById("drop-down2").addEventListener("click", () => {
-        c2++;
-        if (c2 === 2) {
-          document
-            .getElementById("drop-down2")
-            .setAttribute("aria-expanded", "false");
-          c2 = 0;
-        } else {
-          document
-            .getElementById("drop-down2")
-            .setAttribute("aria-expanded", "true");
-        }
-      });
-
-      document.getElementById("drop-down3").addEventListener("click", () => {
-        c3++;
-        if (c3 === 2) {
-          document
-            .getElementById("drop-down3")
-            .setAttribute("aria-expanded", "false");
-          c3 = 0;
-        } else {
-          document
-            .getElementById("drop-down3")
-            .setAttribute("aria-expanded", "true");
-        }
-      });
-      document.getElementById("drop-down4").addEventListener("click", () => {
-        c4++;
-        if (c4 === 2) {
-          document
-            .getElementById("drop-down4")
-            .setAttribute("aria-expanded", "false");
-          c4 = 0;
-        } else {
-          document
-            .getElementById("drop-down4")
-            .setAttribute("aria-expanded", "true");
-        }
-      });
-
-      document
-        .getElementById("hot_jar_footer_title")
-        .addEventListener("click", () => {
-          console.log("clicked");
-          document
-            .getElementById("hot_jar_footer_list")
-            .classList.toggle("footer-item-list-hide");
-        });
     </script>
   </body>
 </html>
