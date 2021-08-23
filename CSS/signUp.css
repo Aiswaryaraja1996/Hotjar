@@ -5,6 +5,11 @@
 }
 body {
   color: rgba(0, 0, 0, 0.6);
+  overflow-x: hidden;
+}
+
+.feedback-form {
+  display: none;
 }
 
 .wrapper-main {
@@ -189,13 +194,16 @@ body {
 }
 .hide-for-signup-email {
   display: none;
-  
 }
 
 .input-form {
   margin-bottom: 30px;
 }
 
+.input-form input:focus {
+  border-color: #00a2f2 !important;
+  box-shadow: 0 2px 4px rgb(45 54 66 / 7%), 0 1px 2px rgb(45 54 66 / 7%) !important;
+}
 .form-signup-email label {
   display: block;
   text-transform: uppercase;
@@ -218,10 +226,10 @@ body {
   border: 1px solid #ccc;
 }
 
-.visibility{
-    width: 16px;
-    height: 16px;
-    margin-right: 4px;
+.visibility {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
 }
 
 .password {
@@ -229,9 +237,9 @@ body {
 }
 
 .password-show-icon {
-    display:flex;
-    justify-content:center;
-    align-items:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   right: 0px;
   cursor: pointer;
@@ -244,10 +252,10 @@ body {
   user-select: none;
 }
 
-.right-arrow{
-    width: 10px;
-    height:14px;
-    margin-left: 8px;
+.right-arrow {
+  width: 10px;
+  height: 14px;
+  margin-left: 8px;
 }
 
 .password-footer {
@@ -308,8 +316,6 @@ body {
   width: 22px;
   box-shadow: 0 2px 4px rgb(45 54 66 / 7%), 0 1px 2px rgb(45 54 66 / 7%);
 }
-
-/* Feeback tag styles  started */
 
 .feedback-container {
   position: absolute;
@@ -416,7 +422,6 @@ body {
   padding: 30px !important;
   text-align: center;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  -webkit-font-smoothing: auto;
 }
 
 .form-icons {
@@ -447,8 +452,6 @@ body {
   width: 19px;
   height: 22px;
 }
-
-
 
 .attach-animation {
   animation: anime 0.2s 200ms;

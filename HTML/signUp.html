@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="../CSS/signUp.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/headerFooter.css" />
 
     <title>Create your Hotjar account - Hotjar</title>
     <link
@@ -56,7 +57,8 @@
                 >
                   <div class="input-form">
                     <label for="name">Full name</label>
-                    <input id="input-box1"
+                    <input
+                      id="input-box1"
                       id="name"
                       name="name"
                       required=""
@@ -68,7 +70,7 @@
                   <div class="input-form">
                     <label for="name">Email address</label>
                     <input
-                      id="name"
+                      id="mail"
                       name="name"
                       required=""
                       class=""
@@ -78,12 +80,15 @@
                   </div>
                   <div class="input-form password">
                     <div role="button" class="password-show-icon">
-                     <img src="../Resources/visibility.png" class="visibility">
+                      <img
+                        src="../Resources/visibility.png"
+                        class="visibility"
+                      />
                       <span>Show</span>
                     </div>
                     <label for="name">password</label>
                     <input
-                      id="name"
+                      id="psswd"
                       name="name"
                       required=""
                       class=""
@@ -92,9 +97,15 @@
                       type="password"
                     />
                     <ul class="password-footer">
-                      <li><span class="bullet"></span>8 characters min.</li>
-                      <li><span class="bullet"></span>One uppercase</li>
-                      <li><span class="bullet"></span>One lowercase</li>
+                      <li id="eightChar">
+                        <span class="bullet"></span>8 characters min.
+                      </li>
+                      <li id="uppercase">
+                        <span class="bullet"></span>One uppercase
+                      </li>
+                      <li id="lowercase">
+                        <span class="bullet"> </span>One lowercase
+                      </li>
                     </ul>
                   </div>
 
@@ -109,10 +120,7 @@
                     />
                     <label for="terms" id="termsLabel"
                       >I accept the
-                      <a
-                        class="underline black"
-                        href="https://hotjar.com/terms"
-                        target="_blank"
+                      <a class="underline black" href="#" target="_blank"
                         >Terms of Service</a
                       >.</label
                     >
@@ -123,7 +131,8 @@
                   class="btn email hide-for-signup-email"
                   id="get_started"
                 >
-                  Get Started <img class="right-arrow" src="../Resources/right-start.png">
+                  Get Started
+                  <img class="right-arrow" src="../Resources/right-start.png" />
                 </button>
 
                 <button class="btn email" id="signup_with_email">
@@ -147,8 +156,7 @@
       </div>
     </div>
 
-    <!-- Feeback tag html started -->
-    <div class="feedback-container">
+    <!-- <div class="feedback-container">
       <div class="feedback-2-container">
         <div class="feedback-hidden-form" id="feedback_form">
           <button class="form-close-icon" id="feed_back_close">x</button>
@@ -173,14 +181,27 @@
 
         <button class="feedback-button" id="feed_back_button">
           <div class="feedback-button-text">Feedback</div>
-          <div class="feedback-button-icon">                        
-                <img class="feedback-img" src="../Resources/icons8-thumbs-up-60.png">
-            </div>
+          <div class="feedback-button-icon">
+            <img
+              class="feedback-img"
+              src="../Resources/icons8-thumbs-up-60.png"
+            />
           </div>
         </button>
       </div>
+    </div> -->
+
+    <div class="feedback-container">
+      <button class="feedback">
+        <div class="feedback-text">Feedback</div>
+        <div>
+          <img
+            class="feedback-img"
+            src="../Resources/icons8-thumbs-up-60.png"
+          />
+        </div>
+      </button>
     </div>
-    <!-- Feeback tag html ended -->
 
     <script>
       document
@@ -197,37 +218,79 @@
             .classList.toggle("hide-for-signup-email");
         });
 
+      //   document
+      //     .getElementById("feed_back_button")
+      //     .addEventListener("click", () => {
+      //       document.getElementById("feedback_form").classList.toggle("active");
+      //       document
+      //         .getElementsByClassName("form-icons-div")[0]
+      //         .classList.toggle("form-icons-div-hide");
+      //       document
+      //         .getElementById("feed_back_button")
+      //         .classList.toggle("feed-back-button-hide");
+      //       var icons = document.getElementsByClassName("feedback-form-icon");
+      //       var i = 0;
+      //       for (const iconDiv of icons) {
+      //         console.log(i);
+      //         iconDiv.setAttribute("style", `animation: anime 0.3s ${i}00ms`);
+      //         i += 1;
+      //       }
+      //     });
+      //   document
+      //     .getElementById("feed_back_close")
+      //     .addEventListener("click", () => {
+      //       document.getElementById("feedback_form").classList.toggle("active");
+      //       document
+      //         .getElementById("feed_back_button")
+      //         .classList.toggle("feed-back-button-hide");
+      //       document
+      //         .getElementsByClassName("form-icons-div")[0]
+      //         .classList.toggle("form-icons-div-hide");
+      //     });
+
       document
-        .getElementById("feed_back_button")
+        .getElementsByClassName("visibility")[0]
         .addEventListener("click", () => {
-          document.getElementById("feedback_form").classList.toggle("active");
-          document
-            .getElementsByClassName("form-icons-div")[0]
-            .classList.toggle("form-icons-div-hide");
-          document
-            .getElementById("feed_back_button")
-            .classList.toggle("feed-back-button-hide");
-          var icons = document.getElementsByClassName("feedback-form-icon");
-          var i = 0;
-          for (const iconDiv of icons) {
-            console.log(i);
-            iconDiv.setAttribute("style", `animation: anime 0.3s ${i}00ms`);
-            i += 1;
+          var psswd = document.getElementById("psswd");
+          if (psswd.type === "password") {
+            psswd.type = "text";
+          } else {
+            psswd.type = "password";
           }
         });
-      document
-        .getElementById("feed_back_close")
-        .addEventListener("click", () => {
-          document.getElementById("feedback_form").classList.toggle("active");
-          document
-            .getElementById("feed_back_button")
-            .classList.toggle("feed-back-button-hide");
-          document
-            .getElementsByClassName("form-icons-div")[0]
-            .classList.toggle("form-icons-div-hide");
-        });
 
+      document.getElementById("psswd").addEventListener("input", () => {
+        var content = document.getElementById("psswd").value;
 
+        var lowPattern = /[a-z]/;
+        if (lowPattern.test(content)) {
+          document.getElementById("lowercase").style.color = "green";
+          document.getElementById("lowercase").style.fontWeight = "bold";
+        } else {
+          document.getElementById("lowercase").style.color =
+            "rgba(0, 0, 0, 0.38)";
+          document.getElementById("lowercase").style.fontWeight = "normal";
+        }
+
+        var pattern = /[A-Z]/;
+        if (pattern.test(content)) {
+          document.getElementById("uppercase").style.color = "green";
+          document.getElementById("uppercase").style.fontWeight = "bold";
+        } else {
+          document.getElementById("uppercase").style.color =
+            "rgba(0, 0, 0, 0.38)";
+          document.getElementById("uppercase").style.fontWeight = "normal";
+        }
+
+        if (content.length >= 8) {
+          document.getElementById("eightChar").style.color = "green";
+          document.getElementById("eightChar").style.fontWeight = "bold";
+        } else {
+          document.getElementById("eightChar").style.color =
+            "rgba(0, 0, 0, 0.38)";
+          document.getElementById("eightChar").style.fontWeight = "normal";
+        }
+      });
     </script>
   </body>
 </html>
