@@ -623,7 +623,50 @@
               We help you better understand user behavior so you can make the
               right changes, improve UX, and grow conversions.
             </p>
-            <button
+            <div class="section-hide">
+              <p class="section-content">
+                We began in 2014, when we released a simple beta version of
+                Hotjar, collected feedback from hundreds of testers (we consider
+                them our
+                <a href="">‘Founding Members’</a>), and kept improving through
+                iterative changes.
+              </p>
+              <p class="section-content">
+                Six years on, Hotjar is the leading solution for businesses
+                selling online and their marketing, analytics, UX, and CRO teams
+                who want a clearer understanding of user behavior. Our team of
+                100+ Hotjarians is committed to making Hotjar easy—easy to get
+                approval for, set up, use, and get valuable insights from.
+              </p>
+              <p class="section-content">
+                We are used on over 900,000 websites in 180+ countries, but we
+                haven’t forgotten our beginnings: our origin story is publicly
+                and transparently documented, and you can
+                <a href="">read it here</a>.
+              </p>
+            </div>
+
+            <div>
+              <button type="button" class="button" id="more">
+                <span class="button_icon">
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </span>
+                <span class="button_text" id="button-t1">Show more</span>
+              </button>
+
+              <button
+                type="button"
+                class="button"
+                style="display: none"
+                id="less"
+              >
+                <span class="button_icon">
+                  <ion-icon name="close"></ion-icon>
+                </span>
+                <span class="button_text" id="button-t1">Show less</span>
+              </button>
+            </div>
+            <!-- <button
               type="button"
               class="button"
               id="btn1"
@@ -633,7 +676,7 @@
                 <ion-icon name="arrow-forward-outline"></ion-icon>
               </span>
               <span class="button_text" id="button-t1">Show more</span>
-            </button>
+            </button> -->
           </div>
         </div>
 
@@ -651,7 +694,49 @@
               We want to build a long-lasting, sustainable, and purposeful
               business with engaged team members and delighted customers.
             </p>
-            <button
+            <div class="section-hide">
+              <p class="section-content">
+                From day one, Hotjar embraced a remote and flexible working
+                environment. We work a 40-hour week but are empowered to plan
+                our time and productivity as we wish. We have budgets to set up
+                our home office, personal development and wellness allowances,
+                and a ‘work together’ budget to visit other Hotjarians, wherever
+                they may be—among other perks. <br /><br />We don't see each
+                other in person often, but our work is always guided by respect,
+                transparency, and collaboration. Our success is measured by the
+                value we create for our users and customers, and all 100+ of us
+                aim to follow five core values: <br /><br />
+                1. Obsess over our users<br />
+                2. Be bold and move fast<br />
+                3. Work with respect <br />
+                4. Build trust with transparency<br />
+                5. Learn by doing <br />
+                <br />The way we work is publicly documented, and you can
+                <a href="">read our team manual here</a>.
+              </p>
+            </div>
+
+            <div>
+              <button type="button" class="button" id="more1">
+                <span class="button_icon">
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </span>
+                <span class="button_text" id="button-t1">Show more</span>
+              </button>
+
+              <button
+                type="button"
+                class="button"
+                style="display: none"
+                id="less1"
+              >
+                <span class="button_icon">
+                  <ion-icon name="close"></ion-icon>
+                </span>
+                <span class="button_text" id="button-t1">Show less</span>
+              </button>
+            </div>
+            <!-- <button
               type="button"
               class="button"
               id="btn2"
@@ -661,7 +746,7 @@
                 <ion-icon name="arrow-forward-outline"></ion-icon>
               </span>
               <span class="button_text" id="button-t2">Show more</span>
-            </button>
+            </button> -->
           </div>
         </div>
 
@@ -890,65 +975,103 @@
 
     <script>
       var a = 0;
-      function open_text1() {
-        a++;
-        if (a == 1) {
-          var div = document.createElement("div");
+      //   function open_text1() {
+      //     a++;
+      //     if (a == 1) {
+      //       var div = document.createElement("div");
 
-          var btn = document.getElementById("btn1");
+      //       var btn = document.getElementById("btn1");
 
-          var divElem = document.getElementById("append1");
-          divElem.insertBefore(div, btn);
+      //       var divElem = document.getElementById("append1");
+      //       divElem.insertBefore(div, btn);
 
-          var para1 = document.createElement("p");
-          para1.innerHTML =
-            "We began in 2014, when we released a simple beta version of Hotjar, collected feedback from hundreds of testers (we consider them our ‘Founding Members’), and kept improving through iterative changes.";
-          div.appendChild(para1);
-          var para2 = document.createElement("p");
-          para2.textContent =
-            "Six years on, Hotjar is the leading solution for businesses selling online and their marketing, analytics, UX, and CRO teams who want a clearer understanding of user behavior. Our team of 100+ Hotjarians is committed to making Hotjar easy—easy to get approval for, set up, use, and get valuable insights from.";
-          div.appendChild(para2);
-          var para3 = document.createElement("p");
-          para3.innerHTML =
-            "We are used on over 900,000 websites in 180+ countries, but we haven’t forgotten our beginnings: our origin story is publicly and transparently documented, and you can read it here.";
-          div.appendChild(para3);
+      //       var para1 = document.createElement("p");
+      //       para1.innerHTML =
+      //         "We began in 2014, when we released a simple beta version of Hotjar, collected feedback from hundreds of testers (we consider them our ‘Founding Members’), and kept improving through iterative changes.";
+      //       div.appendChild(para1);
+      //       var para2 = document.createElement("p");
+      //       para2.textContent =
+      //         "Six years on, Hotjar is the leading solution for businesses selling online and their marketing, analytics, UX, and CRO teams who want a clearer understanding of user behavior. Our team of 100+ Hotjarians is committed to making Hotjar easy—easy to get approval for, set up, use, and get valuable insights from.";
+      //       div.appendChild(para2);
+      //       var para3 = document.createElement("p");
+      //       para3.innerHTML =
+      //         "We are used on over 900,000 websites in 180+ countries, but we haven’t forgotten our beginnings: our origin story is publicly and transparently documented, and you can read it here.";
+      //       div.appendChild(para3);
 
-          var button_text = document.getElementById("button-t1");
-          button_text.innerHTML = "Show Less";
-        }
-      }
+      //       var button_text = document.getElementById("button-t1");
+      //       button_text.innerHTML = "Show Less";
+      //     }
+      //   }
       var b = 0;
-      function open_text2() {
-        b++;
-        if (b == 1) {
-          var div = document.createElement("div");
+      //   function open_text2() {
+      //     b++;
+      //     if (b == 1) {
+      //       var div = document.createElement("div");
 
-          var btn = document.getElementById("btn2");
+      //       var btn = document.getElementById("btn2");
 
-          var divElem = document.getElementById("append2");
-          divElem.insertBefore(div, btn);
+      //       var divElem = document.getElementById("append2");
+      //       divElem.insertBefore(div, btn);
 
-          var para1 = document.createElement("p");
-          para1.textContent =
-            "From day one, Hotjar embraced a remote and flexible working environment. We work a 40-hour week but are empowered to plan our time and productivity as we wish. We have budgets to set up our home office, personal development and wellness allowances, and a ‘work together’ budget to visit other Hotjarians, wherever they may be—among other perks.";
-          div.appendChild(para1);
-          var para2 = document.createElement("p");
-          para2.textContent =
-            "We don't see each other in person often, but our work is always guided by respect, transparency, and collaboration. Our success is measured by the value we create for our users and customers, and all 100+ of us aim to follow five core values:";
-          div.appendChild(para2);
-          var para3 = document.createElement("p");
-          para3.innerHTML =
-            "1. Obsess over our users<br/>2. Be bold and move fast<br/>3. Work with respect<br/>4. Build trust with transparency<br/>5. Learn by doing<br/>";
-          div.appendChild(para3);
-          var para4 = document.createElement("p");
-          para4.innerHTML =
-            "The way we work is publicly documented, and you can read our team manual here.";
-          div.appendChild(para4);
+      //       var para1 = document.createElement("p");
+      //       para1.textContent =
+      //         "From day one, Hotjar embraced a remote and flexible working environment. We work a 40-hour week but are empowered to plan our time and productivity as we wish. We have budgets to set up our home office, personal development and wellness allowances, and a ‘work together’ budget to visit other Hotjarians, wherever they may be—among other perks.";
+      //       div.appendChild(para1);
+      //       var para2 = document.createElement("p");
+      //       para2.textContent =
+      //         "We don't see each other in person often, but our work is always guided by respect, transparency, and collaboration. Our success is measured by the value we create for our users and customers, and all 100+ of us aim to follow five core values:";
+      //       div.appendChild(para2);
+      //       var para3 = document.createElement("p");
+      //       para3.innerHTML =
+      //         "1. Obsess over our users<br/>2. Be bold and move fast<br/>3. Work with respect<br/>4. Build trust with transparency<br/>5. Learn by doing<br/>";
+      //       div.appendChild(para3);
+      //       var para4 = document.createElement("p");
+      //       para4.innerHTML =
+      //         "The way we work is publicly documented, and you can read our team manual here.";
+      //       div.appendChild(para4);
 
-          var button_text = document.getElementById("button-t2");
-          button_text.innerHTML = "Show Less";
-        }
-      }
+      //       var button_text = document.getElementById("button-t2");
+      //       button_text.innerHTML = "Show Less";
+      //     }
+      //   }
+
+      document.getElementById("more").addEventListener("click", () => {
+        console.log(1);
+        document
+          .getElementsByClassName("section-hide")[0]
+          .classList.add("section-active");
+        document.getElementById("more").setAttribute("style", "display:none");
+
+        document.getElementById("less").setAttribute("style", "display:block");
+      });
+
+      document.getElementById("less").addEventListener("click", () => {
+        document
+          .getElementsByClassName("section-hide")[0]
+          .classList.remove("section-active");
+        document.getElementById("more").setAttribute("style", "display:block");
+
+        document.getElementById("less").setAttribute("style", "display:none");
+      });
+
+      document.getElementById("more1").addEventListener("click", () => {
+        console.log(1);
+        document
+          .getElementsByClassName("section-hide")[1]
+          .classList.add("section-active");
+        document.getElementById("more1").setAttribute("style", "display:none");
+
+        document.getElementById("less1").setAttribute("style", "display:block");
+      });
+
+      document.getElementById("less1").addEventListener("click", () => {
+        document
+          .getElementsByClassName("section-hide")[1]
+          .classList.remove("section-active");
+        document.getElementById("more1").setAttribute("style", "display:block");
+
+        document.getElementById("less1").setAttribute("style", "display:none");
+      });
     </script>
     <script
       type="module"

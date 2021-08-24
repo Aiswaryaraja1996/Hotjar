@@ -9,6 +9,10 @@ h1,
 h2 {
   margin: 0px !important;
 }
+
+button {
+  padding: 0px !important;
+}
 .container-1,
 .container-2,
 .container-3 {
@@ -42,6 +46,9 @@ h2 {
 .margin-img img {
   width: 550px;
 }
+ion-icon {
+  font-size: 16px;
+}
 
 .img1 {
   display: block;
@@ -50,6 +57,22 @@ h2 {
   font-size: 52px;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
+}
+.section-hide {
+  max-height: 700px;
+  height: auto;
+  transition: 1s;
+  display: none;
+}
+
+.section-content {
+  font-size: 16px !important;
+  line-height: 1.5;
+  color: #333;
+}
+
+.section-active {
+  display: block;
 }
 
 .left-wrap p {

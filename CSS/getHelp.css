@@ -1,7 +1,10 @@
 * {
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+}
+li {
+  list-style-type: none;
 }
 h3 {
   margin: 0px;
@@ -154,14 +157,8 @@ textarea {
   vertical-align: center;
   cursor: pointer;
 }
-#stickyArticles {
-  position: sticky;
-  top: 0;
-}
+
 .featuredArticles {
-  margin: 0 auto;
-  margin-top: -50px;
-  margin-bottom: 30px;
   background-color: #fff;
   max-width: 610px;
   width: auto;
@@ -170,10 +167,13 @@ textarea {
   border-radius: 10px;
   text-align: center;
   padding: 15px;
-  /* top: 10px;
 
-  position: sticky; */
-  /* z-index: 999; */
+  position: sticky;
+  top: 0;
+
+  margin: 0 auto;
+  margin-top: -50px;
+  margin-bottom: 30px;
 }
 
 .featuredArticles h1 {
@@ -337,6 +337,7 @@ a > button {
 }
 
 .footer {
+  max-width: 100%;
   border-top: 1px solid #ddd;
   margin-top: 60px;
   padding: 30px 0;
@@ -344,7 +345,7 @@ a > button {
   color: #5d708a;
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
-  overflow: auto;
+  overflow: hidden;
 }
 .footer li {
   margin: 8px 0px;
@@ -379,6 +380,48 @@ a > button {
   font-size: 14px;
   font-weight: 600;
 }
+/* Feeback tag styles  started */
+
+.feedback-container {
+  top: 377px;
+  right: 0px;
+  position: fixed;
+  transform: translateY(-50%);
+  display: block;
+}
+
+.feedback {
+  font-size: 13px;
+  position: relative;
+  border: none;
+  padding: 12px 14px 12px 12px;
+  cursor: pointer;
+  background-color: #f4364c;
+  border-radius: 3px 0 0 3px;
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.feedback-text {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  color: white;
+  font-weight: normal;
+}
+
+.feedback-img {
+  margin: 10px 0 0 0;
+  width: 19px;
+  height: 22px;
+}
+
+.feedback:hover {
+  transform: translateX(0);
+  box-shadow: 0 0 35px 2px rgb(0 0 0 / 24%);
+  opacity: 1;
+  width: 42px;
+}
+/* Feeback tag styles ended */
 @media only screen and (max-width: 768px) {
   #popular-guides > div {
     grid-template:
@@ -439,10 +482,10 @@ a > button {
     padding: 0 5%;
   }
   .footer .column {
-    float: left;
-    width: 30%;
+    float: none;
+    padding: 10px 30px;
+    width: 56%;
     margin: auto;
-    padding-left: 100px;
   }
   .footer .logo,
   .footer .copyright {
@@ -451,5 +494,10 @@ a > button {
     width: 100%;
     margin-top: 10px;
     margin-bottom: 20px;
+  }
+
+  .footer .copyright {
+    clear: both;
+    padding: 0px;
   }
 }
