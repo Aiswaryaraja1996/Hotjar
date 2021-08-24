@@ -1,0 +1,155 @@
+body {
+  color: #333;
+  font-family: "Open Sans", sans-serif;
+}
+.your-privacy-text-div > p {
+  padding: 0 10%;
+  line-height: 150%;
+  font-size: 125%;
+  letter-spacing: 1px;
+}
+h1 {
+  font-family: "Merriweather", serif;
+  font-size: 410%;
+  padding-left: 9%;
+  padding-top: 15%;
+  padding-bottom: 2%;
+  letter-spacing: 1px;
+}
+.your-privacy-hotjar-main-div > div {
+  width: 50%;
+}
+.your-privacy-hotjar-main-div {
+  display: flex;
+  height: 800px;
+  background-color: #f4f4f4;
+}
+
+.your-privacy-image {
+  background-image: url(https://static-cms.hotjar.com/documents/privacy-6.svg);
+}
+.last-div-question-div {
+  height: 320px;
+  background-color: #d8d8d8;
+  border: 1px solid #D8D8D8;
+}
+.last-div-question-div > h2 {
+  text-align: center;
+  font-size: 330%;
+  padding-top: 3.5%;
+}
+.last-div-question-div > p {
+  max-width: 60%;
+  margin: -1% auto 3.5%;
+  font-weight: 550;
+  text-align: center;
+}
+.last-div-question-div > div {
+  height: 35px;
+  width: 15%;
+  font-size: 108%;
+  color: white;
+  text-align: center;
+  background-color: black;
+  margin: -1.8% auto;
+  padding-top: 1%;
+  border-radius: 8px;
+}
+.middle-body-main-box {
+  height: 4200px;
+  /* border: 1px solid red; */
+}
+.child-div {
+  display: flex;
+  height: 700px;
+  /* border: 1px solid red; */
+}
+.child-div > .left,
+.child-div > .right {
+  width: 50%;
+  /* border: 1px solid red; */
+}
+.for-color-01 {
+  background-color: #f2f9ff;
+}
+.for-color-02 {
+  background-color: #feffc8;
+}
+.for-color-03 {
+  background-color: #fee1e6;
+}
+.for-color-04 {
+  background-color: #d1fffa;
+}
+.for-color-05 {
+  background-color: #ffe1d0;
+}
+.for-color-06 {
+  background-color: #feffc8;
+}
+.for-color-01 > div {
+  background-image: url(https://static-cms.hotjar.com/documents/privacy-7.svg);
+}
+.for-color-02 > div {
+  background-image: url(https://static-cms.hotjar.com/documents/privacy-5.svg);
+}
+.for-color-03 > div {
+  background-image: url(https://static-cms.hotjar.com/documents/privacy-3.svg);
+}
+.for-color-04 > div {
+  background-image: url(https://static-cms.hotjar.com/documents/privacy-4.svg);
+}
+.for-color-05 > div {
+  background-image: url(https://static-cms.hotjar.com/documents/privacy-1.svg);
+}
+.for-color-06 > div {
+  background-image: url(https://static-cms.hotjar.com/documents/privacy-2.svg);
+}
+.right > div {
+  height: 53%;
+  width: 75%;
+  margin: 20% auto;
+  background-size: contain;
+  background-position: center;
+}
+.left {
+  padding: 80px;
+}
+.left > h2 {
+  margin: auto;
+  font-size: 376%;
+  font-weight: 650;
+  padding-top: 16%;
+}
+.left > p {
+  max-width: 95%;
+  line-height: 150%;
+  font-size: 130%;
+  letter-spacing: 1px;
+}
+
+.button > div:nth-child(1) {
+  font-size: 150%;
+}
+.button > div:nth-child(2) {
+  font-size: 120%;
+  font-weight: 500;
+  padding: 0.5%;
+}
+.button {
+  display: flex;
+}
+.button > div:nth-child(2):hover {
+  text-decoration: underline;
+  text-decoration-thickness: 15%;
+  cursor: pointer;
+}
+
+/* javacri */
+
+/* #append_01 > div{
+  max-width: 95%;
+  line-height: 125%;
+  letter-spacing: 1px;
+  color: rgb(68, 66, 66);
+} */
