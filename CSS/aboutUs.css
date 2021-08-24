@@ -10,9 +10,6 @@ h2 {
   margin: 0px !important;
 }
 
-button {
-  padding: 0px !important;
-}
 .container-1,
 .container-2,
 .container-3 {
@@ -66,7 +63,7 @@ ion-icon {
 }
 
 .section-content {
-  font-size: 16px !important;
+  font-size: 14px !important;
   line-height: 1.5;
   color: #333;
 }
@@ -152,9 +149,18 @@ h2 + p {
   font-size: 20px;
   margin-top: 26px;
 }
+.button_text {
+  text-decoration: none;
+  text-decoration-color: black;
+}
 .button_text:hover {
   text-decoration: underline;
+
+  text-underline-offset: 5px;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
 }
+
 #bottom {
   text-align: center;
 }
@@ -162,7 +168,6 @@ h2 + p {
   width: 1050px;
 }
 #downarrow_button {
-  font-size: 60px;
   border: none;
   background-color: rgb(244, 244, 244);
   margin-left: 48%;
@@ -173,6 +178,9 @@ p > a {
 }
 .p-top {
   padding-top: 180px;
+}
+.sm-img {
+  display: none;
 }
 @media screen and (max-width: 768px) {
   .img1 {
@@ -232,5 +240,11 @@ p > a {
   }
   #bottom img {
     max-width: 100%;
+  }
+  .sm-img {
+    display: block;
+  }
+  .lg-img {
+    display: none;
   }
 }

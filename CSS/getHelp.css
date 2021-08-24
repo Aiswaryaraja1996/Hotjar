@@ -220,7 +220,12 @@ textarea {
 #first > p,
 #second > p {
   line-height: 35px;
-  font-size: 18px;
+  font-size: 15px;
+
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 10px 0px 10px 0px;
+  color: #263345;
 }
 #first > p:hover,
 #second > p:hover {
@@ -228,6 +233,10 @@ textarea {
 }
 #second {
   grid-area: "y";
+}
+
+.box h3 {
+  font-size: 18px !important;
 }
 #bg-color {
   background-color: rgb(245, 245, 245);
@@ -263,10 +272,10 @@ textarea {
 p {
   margin: 5px;
 }
-.box > p,
+/* .box > p,
 .lw-box > p {
   font-size: 18px;
-}
+} */
 .box > p:hover {
   color: rgb(128, 128, 128);
 }
@@ -321,8 +330,7 @@ p {
   margin: 15px;
   text-align: center;
   background-color: white;
-  padding-top: 5px;
-  padding-bottom: 30px;
+  padding: 25px 10px 20px 10px;
 }
 .lw-box:hover {
   box-shadow: 0 1.5px 3px 1.5px rgb(181, 181, 181);
@@ -334,6 +342,10 @@ a > button {
   color: white;
   padding: 10px 30px;
   margin-top: 30px;
+}
+
+a > button:hover {
+  background-color: #da2e4c;
 }
 
 .footer {
@@ -499,5 +511,8 @@ a > button {
   .footer .copyright {
     clear: both;
     padding: 0px;
+  }
+  .nav-wrapper .try-it-free {
+    display: none;
   }
 }

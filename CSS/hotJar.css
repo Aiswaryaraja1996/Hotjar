@@ -384,6 +384,9 @@ p {
   font-family: "Merriweather", "serif";
 }
 
+.content-text > h4 > a {
+  color: inherit;
+}
 .case-study {
   display: flex;
   flex-direction: row-reverse;
@@ -493,6 +496,12 @@ p {
   text-decoration: none;
   text-align: center;
   box-sizing: border-box;
+}
+
+.try-btn .btn:hover,
+.try-btn .btn:active,
+.try-btn .btn:focus {
+  background-color: #da2e4c;
 }
 
 .get-started-wrap {

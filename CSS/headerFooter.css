@@ -261,6 +261,19 @@ a:hover {
   color: #fd3a5c;
 }
 
+.subnav-item-link:hover,
+.subnav-item-link:active,
+.subnav-item-link:focus {
+  color: #0085d4;
+  cursor: pointer;
+}
+
+.footer-title:hover,
+.footer-title:active,
+.footer-title:focus {
+  color: black;
+  cursor: pointer;
+}
 /* Nav bar styles ended */
 
 /* Footer section starts */

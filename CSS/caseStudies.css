@@ -218,6 +218,10 @@ a {
   .txt {
     margin-bottom: 40px;
   }
+
+  #caseDiv {
+    margin-top: 0px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -282,5 +286,9 @@ a {
     width: 40%;
     margin-left: 0px;
     margin-bottom: 14px;
+  }
+
+  #caseDiv {
+    margin-top: 0px;
   }
 }
