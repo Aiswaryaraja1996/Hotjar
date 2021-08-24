@@ -1316,14 +1316,21 @@
         <div class="close-button" id="close_button">
           <img src="../Resources/delete.png" />
         </div>
-        <video src="" class="video"></video>
+        <video
+          src="../Resources/Intro to Hotjar... in 60 seconds.mp4"
+          class="video"
+        ></video>
         <div class="video-controls">
           <div id="video-play-button">
             <img src="../Resources/play-button-arrowhead.png" />
           </div>
+          <div id="current">0:00</div>
+          <div>/</div>
+          <div id="duration">0:00</div>
           <div class="video-porgress-bar">
             <div class="video-progress">
               <div class="video-progress-main"></div>
+
               <div class="video-progress-dragger"></div>
             </div>
           </div>
@@ -1331,6 +1338,7 @@
       </div>
     </div>
 
+    <script src="../javaScript/headerFooter.js"></script>
     <script>
       var videoDialogEle = document.getElementById("video_dialog");
       var playButtonEles = document.getElementsByClassName(
@@ -1344,6 +1352,7 @@
       }
 
       document.getElementById("close_button").addEventListener("click", () => {
+        videoEle.currentTime = 0;
         videoDialogEle.setAttribute("style", "display:none");
       });
 
@@ -1359,7 +1368,6 @@
         .getElementById("video-play-button")
         .addEventListener("click", () => {
           if (videoEle.paused) {
-            console.log("video playing");
             videoEle.play();
           } else {
             console.log("video paused");
@@ -1368,6 +1376,18 @@
         });
 
       videoEle.addEventListener("timeupdate", () => {
+        var dur = (videoEle.duration / 60).toFixed(2);
+
+        document.getElementById("duration").textContent = String(dur)
+          .split(".")
+          .join(":");
+
+        var curTime = (document.getElementById("current").textContent =
+          videoEle.currentTime / 60).toFixed(2);
+        document.getElementById("current").textContent = String(curTime)
+          .split(".")
+          .join(":");
+
         var pos = videoEle.currentTime / videoEle.duration;
         videoProgress.setAttribute("style", `width: ${pos * 100}%`);
         videoDragger.setAttribute("style", `left: ${pos * 100}%`);
@@ -1402,25 +1422,6 @@
         k[myIndex - 1].classList.add("active-text");
         setTimeout(imgSlide, 2000);
       }
-
-      // function videoSlide() {
-      //   console.log(2);
-      //   var i;
-      //   var m = document.getElementsByClassName("testimonialSlide");
-      //   var n = document.getElementsByClassName("slide-line");
-
-      //   for (i = 0; i < m.length; i++) {
-      //     m[i].style.display = "none";
-      //     n[i].style.backgroundColor = "#e1e1e1";
-      //   }
-      //   count2++;
-      //   if (count2 > m.length) {
-      //     count2 = 1;
-      //   }
-      //   m[count2 - 1].style.display = "block";
-      //   n[count2 - 1].style.backgroundColor = "#fd385b";
-      //   // setTimeout(videoSlide, 5000);
-      // }
 
       var slideCount = 1;
 
@@ -1471,97 +1472,6 @@
 
         setTimeout(videoSlide, 5000);
       }
-
-      document
-        .getElementsByClassName("toggle-menu")[0]
-        .addEventListener("click", () => {
-          document
-            .getElementsByClassName("small-screen-menu")[0]
-            .classList.toggle("is-visible");
-          document
-            .getElementsByClassName("blurr-background")[0]
-            .classList.toggle("make-visible");
-        });
-      document
-        .getElementsByClassName("closeIcon")[0]
-        .addEventListener("click", () => {
-          document
-            .getElementsByClassName("small-screen-menu")[0]
-            .classList.remove("is-visible");
-          document
-            .getElementsByClassName("blurr-background")[0]
-            .classList.remove("make-visible");
-        });
-
-      var c1 = 0;
-      var c2 = 0;
-      var c3 = 0;
-      var c4 = 0;
-
-      document.getElementById("drop-down1").addEventListener("click", () => {
-        c1++;
-
-        if (c1 === 2) {
-          document
-            .getElementById("drop-down1")
-            .setAttribute("aria-expanded", "false");
-          c1 = 0;
-        } else {
-          document
-            .getElementById("drop-down1")
-            .setAttribute("aria-expanded", "true");
-        }
-      });
-
-      document.getElementById("drop-down2").addEventListener("click", () => {
-        c2++;
-        if (c2 === 2) {
-          document
-            .getElementById("drop-down2")
-            .setAttribute("aria-expanded", "false");
-          c2 = 0;
-        } else {
-          document
-            .getElementById("drop-down2")
-            .setAttribute("aria-expanded", "true");
-        }
-      });
-
-      document.getElementById("drop-down3").addEventListener("click", () => {
-        c3++;
-        if (c3 === 2) {
-          document
-            .getElementById("drop-down3")
-            .setAttribute("aria-expanded", "false");
-          c3 = 0;
-        } else {
-          document
-            .getElementById("drop-down3")
-            .setAttribute("aria-expanded", "true");
-        }
-      });
-      document.getElementById("drop-down4").addEventListener("click", () => {
-        c4++;
-        if (c4 === 2) {
-          document
-            .getElementById("drop-down4")
-            .setAttribute("aria-expanded", "false");
-          c4 = 0;
-        } else {
-          document
-            .getElementById("drop-down4")
-            .setAttribute("aria-expanded", "true");
-        }
-      });
-
-      document
-        .getElementById("hot_jar_footer_title")
-        .addEventListener("click", () => {
-          console.log("clicked");
-          document
-            .getElementById("hot_jar_footer_list")
-            .classList.toggle("footer-item-list-hide");
-        });
     </script>
   </body>
 </html>
