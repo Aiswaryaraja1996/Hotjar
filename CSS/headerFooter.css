@@ -351,6 +351,14 @@ a:hover {
   height: 30px;
 }
 
+.lg-screen {
+  display: block;
+}
+
+.sm-screen {
+  display: none;
+}
+
 .footer-copyright {
   font-size: 0.66667rem;
   text-align: center;
@@ -638,8 +646,19 @@ a:hover {
     top: 231px;
     z-index: 8;
   }
-  .footer-logo {
-    display: none;
+
+  .inner-container > a:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .lg-screen {
+    display: none !important;
+  }
+
+  .sm-screen {
+    display: block !important;
+    filter: brightness(0);
   }
 
   .footer-bottom {

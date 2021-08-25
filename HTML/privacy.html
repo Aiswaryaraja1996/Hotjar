@@ -1,30 +1,45 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../CSS/headerFooter.css" />
 
-<head>
-
-        <link rel="stylesheet" type="text/css" href="../CSS/headerFooter.css" />
-    
     <title>Your Privacy & Hotjar</title>
 
-    <link rel="icon" href="https://cdn.iconscout.com/icon/free/png-512/hotjar-3521492-2944936.png"
-        type="image/x-icon" />
+    <link
+      rel="icon"
+      href="https://cdn.iconscout.com/icon/free/png-512/hotjar-3521492-2944936.png"
+      type="image/x-icon"
+    />
 
     <link rel="stylesheet" href="..//CSS/privacy.css" />
     <script src="../javaScript/privacy.js"></script>
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-     <!-- Nav bar changes started -->
+  <body>
+    <!-- Nav bar changes started -->
     <header class="header">
       <div class="inner-header-div">
         <div class="inner-header">
-          <a
-            href="file:///C:/Users/rajap/Desktop/masailearning/PROJECT1/HOTJAR/hotJar.html"
-            class="header-logo"
-            title="Home page"
-          >
+          <a href="../HTML/hotJar.html" class="header-logo" title="Home page">
             <img
               src="https://seeklogo.com/images/H/hotjar-logo-7F1ECF09D5-seeklogo.com.png"
             />
@@ -554,132 +569,237 @@
       </div>
     </header>
     <!-- Nav bar changes ended -->
-
-    <div class="your-privacy-hotjar-main-div">
-
+    <div class="wrap">
+      <div class="your-privacy-hotjar-main-div">
         <div class="your-privacy-text-div">
-            <h1>Your privacy & Hotjar</h1>
-            <p>From day one, Hotjar was designed and built with privacy in mind. We wanted to help our costomers improve
-                their websites and create better user experiences, while keeping privacy t the core of our software-and
-                we've been doing it since 2014.</p>
-            <p>Today, Hotjar is used on over 900,000 websites in 180+ countries. We believe we have a responsibility to
-                set the example and protect not just the privacy of our customers, but also that of people who visit
-                their website -in other words:you.</p>
+          <h1>Your privacy & Hotjar</h1>
+          <p>
+            From day one, Hotjar was designed and built with privacy in mind. We
+            wanted to help our costomers improve their websites and create
+            better user experiences, while keeping privacy t the core of our
+            software-and we've been doing it since 2014.
+          </p>
+          <p>
+            Today, Hotjar is used on over 900,000 websites in 180+ countries. We
+            believe we have a responsibility to set the example and protect not
+            just the privacy of our customers, but also that of people who visit
+            their website -in other words:you.
+          </p>
         </div>
 
         <div class="your-privacy-image-div right">
-            <div class="your-privacy-image"></div>
+          <div class="your-privacy-image"></div>
         </div>
-
+      </div>
+      <a href="#append1">
+        <div id="downarrow_button">
+          <img
+            src="../Resources/arrow-down-sign-to-navigate.png"
+            style="width: 35px; filter: invert(0.5)"
+          />
+        </div>
+      </a>
     </div>
 
     <div class="middle-body-main-box">
+      <div class="child-div" id="append1">
+        <div class="left" id="append_01">
+          <h2>Improving websites, for you.</h2>
+          <p>
+            Online businesses use Hotjar to create better website experiences.
+          </p>
 
-        <div class="child-div">
-            <div class="left" id="append_01">
-                <h2>Improving websites, for you.</h2>
-                <p>Online businesses use Hotjar to create better website experiences.</p>
-                 
-                <div class="button" id="btn_01">
-                    <div>&#x2192</div>
-                    <div onclick="paragraph_01()" id="more-less"> More</div>
-                </div>
+          <div class="button" id="btn_01">
+            <!-- <div>&#x2192</div>  -->
+
+            <div>
+              <img
+                class="arrow"
+                src="https://www.hotjar.com/static/images/arrow-right.svg"
+              />
+              <img
+                class="cross"
+                style="display: none"
+                src="https://www.hotjar.com/static/images/cross-black.svg"
+              />
             </div>
-            <div class="right for-color-01">
-                <div></div>
-            </div>
+            <div onclick="paragraph_01()" id="more-less">More</div>
+          </div>
         </div>
-        <div class="child-div">
-            <div class="left" id="append_02">
-                <h2>We record interactions, not your sensitive data.</h2>
-                <p>Hotjar is designed for websites to get insights. And respect your privacy.</p>
-
-                <div class="button" id="btn_02">
-                    <div>&#x2192</div>
-                    <div onclick="paragraph_02()" id="more-les"> More </div>
-                </div>
-            </div>
-
-            <div class="right for-color-02">
-                <div></div>
-            </div>
+        <div class="right for-color-01">
+          <div>
+            <img src="https://static-cms.hotjar.com/documents/privacy-7.svg" />
+          </div>
         </div>
-        <div class="child-div">
+      </div>
+      <div class="child-div">
+        <div class="left" id="append_02">
+          <h2>We record interactions, not your sensitive data.</h2>
+          <p>
+            Hotjar is designed for websites to get insights. And respect your
+            privacy.
+          </p>
 
-            <div class="left" id="append_03">
-                <h2>We will never share or sell your data.</h2>
-                <p>Not to advertisers. Not to third-party services. Not to anyone.</p>
-                <div class="button" id="btn_03">
-                    <div>&#x2192</div>
-                    <div onclick="paragraph_03()" id="more-le"> More </div>
-                </div>
-            </div>
+          <div class="button" id="btn_02">
+            <!-- <div>&#x2192</div> -->
 
-            <div class="right for-color-03">
-                <div></div>
+            <div>
+              <img
+                class="arrow"
+                src="https://www.hotjar.com/static/images/arrow-right.svg"
+              />
+              <img
+                class="cross"
+                style="display: none"
+                src="https://www.hotjar.com/static/images/cross-black.svg"
+              />
             </div>
-
-        </div>
-        <div class="child-div">
-            <div class="left" id="append_04">
-                <h2>Request and access your data, anytime.</h2>
-                <p>Your data is stored securely, and you can ask to see it whenever you want.</p>
-                <div class="button" id="btn_04">
-                    <div>&#x2192</div>
-                    <div onclick="paragraph_04()" id="more-l"> More </div>
-                </div>
-            </div>
-            <div class="right for-color-04">
-                <div></div>
-            </div>
-        </div>
-        <div class="child-div">
-            <div class="left" id="append_05">
-                <h2>Tracking: we'll always give you options.</h2>
-                <p>If you prefer websites not to track data about your visit, we can help.</p>
-
-                <div class="button" id="btn_05">
-                    <div>&#x2192</div>
-                    <div onclick="paragraph_05()" id="more"> More</div>
-                </div>
-            </div>
-            <div class="right for-color-05">
-                <div></div>
-            </div>
-        </div>
-        <div class="child-div">
-            <div class="left" id="append_06">
-                <h2>Compliance commitment: GDPR, CCPA, and more.</h2>
-                <p>Our customers can use Hotjar in a compliant manner, for you.</p>
-                <div class="button" id="btn_06">
-                    <div>&#x2192</div>
-                    <div onclick="paragraph_06()" id="mor"> More </div>
-                </div>
-            </div>
-            <div class="right for-color-06">
-                <div></div>
-            </div>
+            <div onclick="paragraph_02()" id="more-les">More</div>
+          </div>
         </div>
 
+        <div class="right for-color-02">
+          <div>
+            <img src="https://static-cms.hotjar.com/documents/privacy-5.svg" />
+          </div>
+        </div>
+      </div>
+      <div class="child-div">
+        <div class="left" id="append_03">
+          <h2>We will never share or sell your data.</h2>
+          <p>Not to advertisers. Not to third-party services. Not to anyone.</p>
+          <div class="button" id="btn_03">
+            <!-- <div>&#x2192</div> -->
+
+            <div>
+              <img
+                class="arrow"
+                src="https://www.hotjar.com/static/images/arrow-right.svg"
+              />
+              <img
+                class="cross"
+                style="display: none"
+                src="https://www.hotjar.com/static/images/cross-black.svg"
+              />
+            </div>
+            <div onclick="paragraph_03()" id="more-le">More</div>
+          </div>
+        </div>
+
+        <div class="right for-color-03">
+          <div>
+            <img src="https://static-cms.hotjar.com/documents/privacy-3.svg" />
+          </div>
+        </div>
+      </div>
+      <div class="child-div">
+        <div class="left" id="append_04">
+          <h2>Request and access your data, anytime.</h2>
+          <p>
+            Your data is stored securely, and you can ask to see it whenever you
+            want.
+          </p>
+          <div class="button" id="btn_04">
+            <!-- <div>&#x2192</div> -->
+            <div>
+              <img
+                class="arrow"
+                src="https://www.hotjar.com/static/images/arrow-right.svg"
+              />
+              <img
+                class="cross"
+                style="display: none"
+                src="https://www.hotjar.com/static/images/cross-black.svg"
+              />
+            </div>
+            <div onclick="paragraph_04()" id="more-l">More</div>
+          </div>
+        </div>
+        <div class="right for-color-04">
+          <div>
+            <img src="https://static-cms.hotjar.com/documents/privacy-4.svg" />
+          </div>
+        </div>
+      </div>
+      <div class="child-div">
+        <div class="left" id="append_05">
+          <h2>Tracking: we'll always give you options.</h2>
+          <p>
+            If you prefer websites not to track data about your visit, we can
+            help.
+          </p>
+
+          <div class="button" id="btn_05">
+            <!-- <div>&#x2192</div> -->
+            <div>
+              <img
+                class="arrow"
+                src="https://www.hotjar.com/static/images/arrow-right.svg"
+              />
+              <img
+                class="cross"
+                style="display: none"
+                src="https://www.hotjar.com/static/images/cross-black.svg"
+              />
+            </div>
+            <div onclick="paragraph_05()" id="more">More</div>
+          </div>
+        </div>
+        <div class="right for-color-05">
+          <div>
+            <img src="https://static-cms.hotjar.com/documents/privacy-1.svg" />
+          </div>
+        </div>
+      </div>
+      <div class="child-div">
+        <div class="left" id="append_06">
+          <h2>Compliance commitment: GDPR, CCPA, and more.</h2>
+          <p>Our customers can use Hotjar in a compliant manner, for you.</p>
+          <div class="button" id="btn_06">
+            <!-- <div>&#x2192</div> -->
+            <div>
+              <img
+                class="arrow"
+                src="https://www.hotjar.com/static/images/arrow-right.svg"
+              />
+              <img
+                class="cross"
+                style="display: none"
+                src="https://www.hotjar.com/static/images/cross-black.svg"
+              />
+            </div>
+            <div onclick="paragraph_06()" id="mor">More</div>
+          </div>
+        </div>
+        <div class="right for-color-06">
+          <div>
+            <img src="https://static-cms.hotjar.com/documents/privacy-2.svg" />
+          </div>
+        </div>
+      </div>
     </div>
-
-
-
 
     <div class="last-div-question-div">
-
-        <h2>Questions? We've got you covered</h2>
-        <p>From FAQs to in-depth resources - our help center has everything you need to know about Hotjar relating to
-            privacy, compliance, legal, and security.</p>
-        <div>Take me there</div>
-
+      <h2>Questions? We've got you covered</h2>
+      <p>
+        From FAQs to in-depth resources - our help center has everything you
+        need to know about Hotjar relating to privacy, compliance, legal, and
+        security.
+      </p>
+      <div>Take me there</div>
     </div>
 
-        <!-- Footer section starts -->
+    <!-- Footer section starts -->
 
     <footer class="footer">
       <div class="footer-wrap">
         <div class="inner-container">
+          <a class="home-link" href="../HTML/hotJar.html">
+            <img
+              class="footer-logo sm-screen"
+              src="https://seeklogo.com/images/H/hotjar-logo-7F1ECF09D5-seeklogo.com.png"
+            />
+          </a>
           <section class="footer-section">
             <nav class="footer-nav">
               <ul class="footer-list">
@@ -841,7 +961,7 @@
           <section class="footer-bottom">
             <a class="home-link" href="">
               <img
-                class="footer-logo"
+                class="footer-logo lg-screen"
                 src="https://seeklogo.com/images/H/hotjar-logo-7F1ECF09D5-seeklogo.com.png"
               />
             </a>
@@ -875,7 +995,6 @@
     </div>
 
     <!-- Feedback icon ended -->
-<script src="../javaScript/headerFooter.js"></script>
-</body>
-
+    <script src="../javaScript/headerFooter.js"></script>
+  </body>
 </html>

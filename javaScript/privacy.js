@@ -1,9 +1,6 @@
 var count = 0;
 
 function paragraph_01() {
-
-    
-
   if (count % 2 == 0) {
     var div = document.createElement("div");
 
@@ -26,35 +23,40 @@ function paragraph_01() {
     div.appendChild(para_03);
 
     divele.insertBefore(div, btn);
-    
-    document.getElementById("append_01").style.backgroundColor =  "#f2f9ff"
-    
-    var moreLess = document.getElementById("more-less");
-    moreLess.textContent  = "X Show less";
 
-
-  } 
-  else {
-    
-    
-    document.getElementById("append_01").removeChild(document.getElementById("append_01").childNodes[5]);
-    document.getElementById("append_01").style.backgroundColor = null ;
+    document.getElementsByClassName("child-div")[0].style.backgroundColor =
+      "#f2f9ff";
 
     var moreLess = document.getElementById("more-less");
-    moreLess.textContent  = "More";
-  
+    moreLess.textContent = "Show less";
+    document
+      .getElementsByClassName("arrow")[0]
+      .setAttribute("style", "display:none;");
+    document
+      .getElementsByClassName("cross")[0]
+      .setAttribute("style", "display:block;");
+  } else {
+    document
+      .getElementById("append_01")
+      .removeChild(document.getElementById("append_01").childNodes[5]);
+    document.getElementById("append_01").style.backgroundColor = null;
+
+    var moreLess = document.getElementById("more-less");
+    moreLess.textContent = "More";
+    document
+      .getElementsByClassName("arrow")[0]
+      .setAttribute("style", "display:block;");
+    document
+      .getElementsByClassName("cross")[0]
+      .setAttribute("style", "display:none;");
   }
 
   count++;
-
 }
 
 var sum = 0;
 
 function paragraph_02() {
-
-    
-
   if (sum % 2 == 0) {
     var div = document.createElement("div");
 
@@ -77,33 +79,40 @@ function paragraph_02() {
     div.appendChild(para_03);
 
     divele.insertBefore(div, btn);
-    
-    document.getElementById("append_02").style.backgroundColor =  "#feffc8"
-    
+
+    document.getElementsByClassName("child-div")[1].style.backgroundColor =
+      "#feffc8";
 
     var moreLess = document.getElementById("more-les");
-    moreLess.textContent  = "X Show less";
-
-  } 
-  else {
-    
-    document.getElementById("append_02").removeChild(document.getElementById("append_02").childNodes[5]);
-    document.getElementById("append_02").style.backgroundColor = null ;
+    moreLess.textContent = "Show less";
+    document
+      .getElementsByClassName("arrow")[1]
+      .setAttribute("style", "display:none;");
+    document
+      .getElementsByClassName("cross")[1]
+      .setAttribute("style", "display:block;");
+  } else {
+    document
+      .getElementById("append_02")
+      .removeChild(document.getElementById("append_02").childNodes[5]);
+    document.getElementById("append_02").style.backgroundColor = null;
 
     var moreLess = document.getElementById("more-les");
-    moreLess.textContent  = "More";
+    moreLess.textContent = "More";
+    document
+      .getElementsByClassName("arrow")[1]
+      .setAttribute("style", "display:block;");
+    document
+      .getElementsByClassName("cross")[1]
+      .setAttribute("style", "display:none;");
   }
 
   sum++;
-
 }
 
 var add = 0;
 
 function paragraph_03() {
-
-    
-
   if (add % 2 == 0) {
     var div = document.createElement("div");
 
@@ -126,32 +135,40 @@ function paragraph_03() {
     div.appendChild(para_03);
 
     divele.insertBefore(div, btn);
-    
-    document.getElementById("append_03").style.backgroundColor =  "#fee1e6"
+
+    document.getElementsByClassName("child-div")[2].style.backgroundColor =
+      "#fee1e6";
 
     var moreLess = document.getElementById("more-le");
-    moreLess.textContent  = "X Show less";
-
-  } 
-  else {
-    
-    document.getElementById("append_03").removeChild(document.getElementById("append_03").childNodes[5]);
-    document.getElementById("append_03").style.backgroundColor = null ;
+    moreLess.textContent = "Show less";
+    document
+      .getElementsByClassName("arrow")[2]
+      .setAttribute("style", "display:none;");
+    document
+      .getElementsByClassName("cross")[2]
+      .setAttribute("style", "display:block;");
+  } else {
+    document
+      .getElementById("append_03")
+      .removeChild(document.getElementById("append_03").childNodes[5]);
+    document.getElementById("append_03").style.backgroundColor = null;
 
     var moreLess = document.getElementById("more-le");
-    moreLess.textContent  = "More";
+    moreLess.textContent = "More";
+    document
+      .getElementsByClassName("arrow")[2]
+      .setAttribute("style", "display:block;");
+    document
+      .getElementsByClassName("cross")[2]
+      .setAttribute("style", "display:none;");
   }
 
   add++;
-
 }
 
 var david = 0;
 
 function paragraph_04() {
-
-    
-
   if (david % 2 == 0) {
     var div = document.createElement("div");
 
@@ -174,33 +191,39 @@ function paragraph_04() {
     div.appendChild(para_03);
 
     divele.insertBefore(div, btn);
-    
- 
-  document.getElementById("append_04").style.backgroundColor =  "#d1fffa"
-  
-  var moreLess = document.getElementById("more-l");
-  moreLess.textContent  = "X Show less";
-   
 
-  } 
-  else {
-    
-    document.getElementById("append_04").removeChild(document.getElementById("append_04").childNodes[5]);
-    document.getElementById("append_04").style.backgroundColor = null ;
+    document.getElementsByClassName("child-div")[3].style.backgroundColor =
+      "#d1fffa";
+
     var moreLess = document.getElementById("more-l");
-    moreLess.textContent  = "More";
+    moreLess.textContent = "Show less";
+    document
+      .getElementsByClassName("arrow")[3]
+      .setAttribute("style", "display:none;");
+    document
+      .getElementsByClassName("cross")[3]
+      .setAttribute("style", "display:block;");
+  } else {
+    document
+      .getElementById("append_04")
+      .removeChild(document.getElementById("append_04").childNodes[5]);
+    document.getElementById("append_04").style.backgroundColor = null;
+    var moreLess = document.getElementById("more-l");
+    moreLess.textContent = "More";
+    document
+      .getElementsByClassName("arrow")[3]
+      .setAttribute("style", "display:block;");
+    document
+      .getElementsByClassName("cross")[3]
+      .setAttribute("style", "display:none;");
   }
 
   david++;
-
 }
 
 var sonu = 0;
 
 function paragraph_05() {
-
-    
-
   if (sonu % 2 == 0) {
     var div = document.createElement("div");
 
@@ -223,35 +246,39 @@ function paragraph_05() {
     div.appendChild(para_03);
 
     divele.insertBefore(div, btn);
-    
- 
-  document.getElementById("append_05").style.backgroundColor =  "#ffe1d0"
 
-  var moreLess = document.getElementById("more");
-  moreLess.textContent  = "X Show less";
+    document.getElementsByClassName("child-div")[4].style.backgroundColor =
+      "#ffe1d0";
 
-   
-
-  } 
-  else {
-    
-    document.getElementById("append_05").removeChild(document.getElementById("append_05").childNodes[5]);
-    document.getElementById("append_05").style.backgroundColor = null ;
     var moreLess = document.getElementById("more");
-    moreLess.textContent  = "More";
+    moreLess.textContent = "Show less";
+    document
+      .getElementsByClassName("arrow")[4]
+      .setAttribute("style", "display:none;");
+    document
+      .getElementsByClassName("cross")[4]
+      .setAttribute("style", "display:block;");
+  } else {
+    document
+      .getElementById("append_05")
+      .removeChild(document.getElementById("append_05").childNodes[5]);
+    document.getElementById("append_05").style.backgroundColor = null;
+    var moreLess = document.getElementById("more");
+    moreLess.textContent = "More";
+    document
+      .getElementsByClassName("arrow")[4]
+      .setAttribute("style", "display:block;");
+    document
+      .getElementsByClassName("cross")[4]
+      .setAttribute("style", "display:none;");
   }
 
   sonu++;
-
 }
-
 
 var raja = 0;
 
 function paragraph_06() {
-
-    
-
   if (raja % 2 == 0) {
     var div = document.createElement("div");
 
@@ -274,26 +301,33 @@ function paragraph_06() {
     div.appendChild(para_03);
 
     divele.insertBefore(div, btn);
-    
- 
-  document.getElementById("append_06").style.backgroundColor =  "#feffc8"
 
-  var moreLess = document.getElementById("mor");
-  moreLess.textContent  = "X Show less";
-
-   
-
-  } 
-  else {
-    
-    document.getElementById("append_06").removeChild(document.getElementById("append_06").childNodes[5]);
-    document.getElementById("append_06").style.backgroundColor = null ;
+    document.getElementsByClassName("child-div")[5].style.backgroundColor =
+      "#feffc8";
 
     var moreLess = document.getElementById("mor");
-    moreLess.textContent  = "More";
+    moreLess.textContent = "Show less";
+    document
+      .getElementsByClassName("arrow")[5]
+      .setAttribute("style", "display:none;");
+    document
+      .getElementsByClassName("cross")[5]
+      .setAttribute("style", "display:block;");
+  } else {
+    document
+      .getElementById("append_06")
+      .removeChild(document.getElementById("append_06").childNodes[5]);
+    document.getElementById("append_06").style.backgroundColor = null;
+
+    var moreLess = document.getElementById("mor");
+    moreLess.textContent = "More";
+    document
+      .getElementsByClassName("arrow")[5]
+      .setAttribute("style", "display:block;");
+    document
+      .getElementsByClassName("cross")[5]
+      .setAttribute("style", "display:none;");
   }
 
   raja++;
-
 }
-
