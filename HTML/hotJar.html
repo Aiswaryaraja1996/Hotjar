@@ -1411,6 +1411,12 @@
               <div class="video-progress-dragger"></div>
             </div>
           </div>
+
+          <div class="volume" id="volume">
+            <img id="mute"  style="display: none"  src="../Resources/mute.png">
+            <img id="unmute" 
+           src="../Resources/volume.png">
+          </div>
         </div>
       </div>
     </div>
@@ -1464,6 +1470,25 @@
             videoEle.pause();
           }
         });
+
+        document.getElementById("volume").addEventListener("click",()=>{
+
+          if(videoEle.muted){
+
+            document.getElementById("mute").setAttribute("style","display:none;");
+          document.getElementById("unmute").setAttribute("style","display:inline-block;");
+         
+          videoEle.muted=false;
+        }
+        else{
+          document.getElementById("unmute").setAttribute("style","display:none;");
+          document.getElementById("mute").setAttribute("style","display:inline-block;");
+     
+          videoEle.muted=true;
+        }
+         
+        
+        })
 
       videoEle.addEventListener("timeupdate", () => {
         var dur = (videoEle.duration / 60).toFixed(2);

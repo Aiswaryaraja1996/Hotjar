@@ -39,7 +39,7 @@ function paragraph_01() {
     document
       .getElementById("append_01")
       .removeChild(document.getElementById("append_01").childNodes[5]);
-    document.getElementById("append_01").style.backgroundColor = null;
+    document.getElementsByClassName("child-div")[0].style.backgroundColor = null;
 
     var moreLess = document.getElementById("more-less");
     moreLess.textContent = "More";
@@ -95,7 +95,7 @@ function paragraph_02() {
     document
       .getElementById("append_02")
       .removeChild(document.getElementById("append_02").childNodes[5]);
-    document.getElementById("append_02").style.backgroundColor = null;
+    document.getElementsByClassName("child-div")[1].style.backgroundColor = null;
 
     var moreLess = document.getElementById("more-les");
     moreLess.textContent = "More";
@@ -151,7 +151,7 @@ function paragraph_03() {
     document
       .getElementById("append_03")
       .removeChild(document.getElementById("append_03").childNodes[5]);
-    document.getElementById("append_03").style.backgroundColor = null;
+    document.getElementsByClassName("child-div")[2].style.backgroundColor = null;
 
     var moreLess = document.getElementById("more-le");
     moreLess.textContent = "More";
@@ -207,7 +207,7 @@ function paragraph_04() {
     document
       .getElementById("append_04")
       .removeChild(document.getElementById("append_04").childNodes[5]);
-    document.getElementById("append_04").style.backgroundColor = null;
+    document.getElementsByClassName("child-div")[3].style.backgroundColor= null;
     var moreLess = document.getElementById("more-l");
     moreLess.textContent = "More";
     document
@@ -262,7 +262,7 @@ function paragraph_05() {
     document
       .getElementById("append_05")
       .removeChild(document.getElementById("append_05").childNodes[5]);
-    document.getElementById("append_05").style.backgroundColor = null;
+    document.getElementsByClassName("child-div")[4].style.backgroundColor = null;
     var moreLess = document.getElementById("more");
     moreLess.textContent = "More";
     document
@@ -317,7 +317,7 @@ function paragraph_06() {
     document
       .getElementById("append_06")
       .removeChild(document.getElementById("append_06").childNodes[5]);
-    document.getElementById("append_06").style.backgroundColor = null;
+    document.getElementsByClassName("child-div")[5].style.backgroundColor = null;
 
     var moreLess = document.getElementById("mor");
     moreLess.textContent = "More";

@@ -691,11 +691,13 @@ a:hover {
 
   .footer-title {
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px !important;
     display: flex;
     justify-content: space-between;
     font-weight: 600;
   }
+
+  
 
   .footer-subnav {
     height: 0px;

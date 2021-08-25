@@ -524,4 +524,24 @@ a > button:hover {
   .search-bar img {
     padding-right: 36px;
   }
+
+  .user-nav[aria-expanded=true] {
+
+    display: block;
+    background-color: #fff;
+    box-shadow: 0 0 4px 0 rgb(0 0 0 / 15%), 0 4px 10px 0 rgb(0 0 0 / 10%);
+    border: solid 1px #ddd;
+    right: 0;
+    left: 0;
+    top: 120px;
+    z-index: 1;
+  }
+  .user-nav {
+    display: inline-block;
+    position: absolute;
+    white-space: nowrap;
+}
+  .nav-wrapper a {
+    color: #3c3c3c;
+  }
 }
