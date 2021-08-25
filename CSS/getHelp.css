@@ -494,10 +494,10 @@ a > button:hover {
     padding: 0 5%;
   }
   .footer .column {
-    float: none;
-    padding: 10px 30px;
-    width: 56%;
-    margin: auto;
+    float: left;
+    padding-left: 30px;
+    width: 45%;
+    margin-right: 0px;
   }
   .footer .logo,
   .footer .copyright {
@@ -514,5 +514,14 @@ a > button:hover {
   }
   .nav-wrapper .try-it-free {
     display: none;
+  }
+
+  .search-bar {
+    margin: auto;
+    margin: 20px;
+  }
+
+  .search-bar img {
+    padding-right: 36px;
   }
 }

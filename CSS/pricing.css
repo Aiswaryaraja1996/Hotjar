@@ -773,4 +773,13 @@ u {
     width: 100%;
     max-width: 100%;
   }
+
+  .qstn-wrap {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .qstn-block h3 {
+    font-size: 18px;
+  }
 }

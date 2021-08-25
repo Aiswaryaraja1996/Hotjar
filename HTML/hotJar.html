@@ -571,7 +571,7 @@
                         title="For Product Managers"
                         class="submenu-link"
                         role="menuitem"
-                        href="../HTML/pricing.html"
+                        href="../HTML/privacy.html"
                         target="_blank"
                       >
                         <span class="submenu-text">
@@ -1331,7 +1331,12 @@
                       <a class="subnav-item-link" href="">Founding members</a>
                     </li>
                     <li class="subnav-item">
-                      <a class="subnav-item-link" href="">Get help</a>
+                      <a
+                        class="subnav-item-link"
+                        href="../HTML/getHelp.html"
+                        target="_blank"
+                        >Get help</a
+                      >
                     </li>
                   </ul>
                 </li>
@@ -1441,19 +1446,20 @@
         .addEventListener("click", () => {
           if (videoEle.paused) {
             document
-              .getElementById("play")
-              .setAttribute("style", "display:block;");
-            document
               .getElementById("pause")
+              .setAttribute("style", "display:inline-block;");
+            document
+              .getElementById("play")
               .setAttribute("style", "display:none");
+
             videoEle.play();
           } else {
             console.log("video paused");
             document
-              .getElementById("pause")
-              .setAttribute("style", "display:block;");
-            document
               .getElementById("play")
+              .setAttribute("style", "display:inline-block;");
+            document
+              .getElementById("pause")
               .setAttribute("style", "display:none");
             videoEle.pause();
           }
@@ -1476,6 +1482,24 @@
         videoProgress.setAttribute("style", `width: ${pos * 100}%`);
         videoDragger.setAttribute("style", `left: ${pos * 100}%`);
       });
+
+      //   document
+      //     .getElementsByClassName("video-controls")[0]
+      //     .addEventListener("mouseout", () => {
+      //       console.log(1);
+      //       document
+      //         .getElementsByClassName("video-controls")[0]
+      //         .setAttribute("class", "hide-controls");
+      //     });
+
+      //   document
+      //     .getElementsByClassName("video-controls")[0]
+      //     .addEventListener("mouseenter", () => {
+      //       console.log(1);
+      //       document
+      //         .getElementsByClassName("video-controls")[0]
+      //         .removeAttribute("class", "hide-controls");
+      //     });
 
       var myIndex = 0;
       var count2 = 0;

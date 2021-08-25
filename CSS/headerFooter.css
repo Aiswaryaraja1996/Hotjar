@@ -10,6 +10,10 @@
   height: 100px;
 }
 
+strong {
+  font-weight: 600;
+}
+
 .inner-header {
   display: flex;
   justify-content: space-between;
@@ -602,10 +606,14 @@ a:hover {
   .submenu-icon {
     filter: brightness(0) invert(1);
   }
+
+  strong {
+    font-weight: 600;
+  }
   .submenu-title {
     font-size: 14px;
     font-family: "Open Sans", sans-serif;
-    font-weight: 400;
+    font-weight: 600 !important;
     color: #fff;
   }
 
