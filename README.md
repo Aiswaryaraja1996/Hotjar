@@ -34,3 +34,7 @@ We are a three member team.
 ```bash
 git clone https://github.com/Aiswaryaraja1996/Hotjar.git
 ```
+
+```bash
+pip install foobar
+```
