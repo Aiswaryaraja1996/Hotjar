@@ -2,7 +2,7 @@
 
 ## About the Project
 This is our very first collaborative project which we are doing as a part of our curriculum at MASAI.
-we have developed the working clone of the websie Hotjar https://www.hotjar.com/ .
+We have developed the working clone of the websie Hotjar https://www.hotjar.com/ .
 Hotjar is a powerful tool that reveals the online behavior and voice of users by combining both Analysis and Feedback tools.
 The aim was to clone a minimum of 6 pages within 9 days.
 
