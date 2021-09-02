@@ -15,8 +15,8 @@ We are a three member team.
 
 ## Tech Stacks Used
 
-- HTML
-- CSS
+- HTML5
+- CSS3
 - JavaScript
 
 ## Pages Cloned
