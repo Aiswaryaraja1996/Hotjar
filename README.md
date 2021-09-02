@@ -1,7 +1,8 @@
 # Hotjar
 
 ## About the Project
-This is the working clone of the websie Hotjar https://www.hotjar.com/ .
+This is our very first collaborative project which we are doing as a part of our curriculum at MASAI.
+we have developed the working clone of the websie Hotjar https://www.hotjar.com/ .
 Hotjar is a powerful tool that reveals the online behavior and voice of users by combining both Analysis and Feedback tools.
 The aim was to clone a minimum of 6 pages within 9 days.
 
@@ -28,5 +29,8 @@ We are a three member team.
 6. Get Help Page
 7. About Us Page
 
+## To clone our project
 
-
+```
+git clone https://github.com/Aiswaryaraja1996/Hotjar.git
+```
