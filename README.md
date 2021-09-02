@@ -31,6 +31,6 @@ We are a three member team.
 
 ## To clone our project
 
-```
+```bash
 git clone https://github.com/Aiswaryaraja1996/Hotjar.git
 ```
