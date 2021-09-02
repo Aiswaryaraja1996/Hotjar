@@ -466,6 +466,20 @@ p {
   color: #3c3c3c;
 }
 
+.case-study-button:hover a >img{
+  margin-left: 8px;
+  
+}
+
+/* .case-study-button:hover a > span{
+  margin-right: 8px;
+} */
+
+.case-study-button > a > img{
+  margin-left: 5px;
+  transition: margin-left 100ms ease-in-out;
+}
+
 .platforms-img {
   text-align: center;
   width: 880px;
@@ -628,6 +642,7 @@ p {
 
 .menu-title:hover {
   text-decoration: underline;
+  text-underline-offset: 5px;
 }
 
 /* Video Dialog */
@@ -716,6 +731,7 @@ p {
   max-width: 100%;
   margin: 5px;
   filter: brightness(0) invert(1);
+  cursor: pointer;
 }
 
 .close-button img {
