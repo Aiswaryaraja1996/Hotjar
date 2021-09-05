@@ -536,11 +536,11 @@ a > button:hover {
     top: 120px;
     z-index: 1;
   }
-  .user-nav {
+  /* .user-nav {
     display: inline-block;
     position: absolute;
     white-space: nowrap;
-}
+} */
   .nav-wrapper a {
     color: #3c3c3c;
   }
